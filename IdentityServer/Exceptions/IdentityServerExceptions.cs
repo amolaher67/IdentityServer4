@@ -12,7 +12,7 @@ namespace IdentityServer.Exceptions
 
         public IdentityServerExceptions()
         {
-            test ="test";
+            test ="test2";
         }
 
         public IdentityServerExceptions(string code)
