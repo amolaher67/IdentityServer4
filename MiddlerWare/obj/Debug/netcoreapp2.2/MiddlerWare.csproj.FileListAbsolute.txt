@@ -1,0 +1,15 @@
+E:\BuildingLink\Ledger-Auth\MiddlerWare\bin\Debug\netcoreapp2.2\MiddlerWare.deps.json
+E:\BuildingLink\Ledger-Auth\MiddlerWare\bin\Debug\netcoreapp2.2\MiddlerWare.runtimeconfig.json
+E:\BuildingLink\Ledger-Auth\MiddlerWare\bin\Debug\netcoreapp2.2\MiddlerWare.runtimeconfig.dev.json
+E:\BuildingLink\Ledger-Auth\MiddlerWare\bin\Debug\netcoreapp2.2\MiddlerWare.dll
+E:\BuildingLink\Ledger-Auth\MiddlerWare\bin\Debug\netcoreapp2.2\MiddlerWare.pdb
+E:\BuildingLink\Ledger-Auth\MiddlerWare\obj\Debug\netcoreapp2.2\MiddlerWare.csprojAssemblyReference.cache
+E:\BuildingLink\Ledger-Auth\MiddlerWare\obj\Debug\netcoreapp2.2\MiddlerWare.csproj.CoreCompileInputs.cache
+E:\BuildingLink\Ledger-Auth\MiddlerWare\obj\Debug\netcoreapp2.2\MiddlerWare.RazorAssemblyInfo.cache
+E:\BuildingLink\Ledger-Auth\MiddlerWare\obj\Debug\netcoreapp2.2\MiddlerWare.RazorAssemblyInfo.cs
+E:\BuildingLink\Ledger-Auth\MiddlerWare\obj\Debug\netcoreapp2.2\MiddlerWare.AssemblyInfoInputs.cache
+E:\BuildingLink\Ledger-Auth\MiddlerWare\obj\Debug\netcoreapp2.2\MiddlerWare.AssemblyInfo.cs
+E:\BuildingLink\Ledger-Auth\MiddlerWare\obj\Debug\netcoreapp2.2\MiddlerWare.RazorTargetAssemblyInfo.cache
+E:\BuildingLink\Ledger-Auth\MiddlerWare\obj\Debug\netcoreapp2.2\MiddlerWare.dll
+E:\BuildingLink\Ledger-Auth\MiddlerWare\obj\Debug\netcoreapp2.2\MiddlerWare.pdb
+E:\BuildingLink\Ledger-Auth\MiddlerWare\bin\Debug\netcoreapp2.2\generated.json
