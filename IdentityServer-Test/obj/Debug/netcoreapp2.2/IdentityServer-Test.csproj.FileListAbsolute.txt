@@ -11,3 +11,4 @@ E:\BuildingLink\Ledger-Auth\IdentityServer-Test\obj\Debug\netcoreapp2.2\Identity
 E:\BuildingLink\Ledger-Auth\IdentityServer-Test\obj\Debug\netcoreapp2.2\IdentityServer-Test.AssemblyInfo.cs
 E:\BuildingLink\Ledger-Auth\IdentityServer-Test\obj\Debug\netcoreapp2.2\IdentityServer-Test.dll
 E:\BuildingLink\Ledger-Auth\IdentityServer-Test\obj\Debug\netcoreapp2.2\IdentityServer-Test.pdb
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\obj\Debug\netcoreapp2.2\IdentityServer-Test.csprojAssemblyReference.cache

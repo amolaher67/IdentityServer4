@@ -8,9 +8,11 @@ namespace IdentityServer.Exceptions
     public class IdentityServerExceptions : Exception
     {
         public string Code { get; }
+        public string test{get;set;}
 
         public IdentityServerExceptions()
         {
+            test ="test";
         }
 
         public IdentityServerExceptions(string code)
