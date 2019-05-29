@@ -43,7 +43,7 @@ namespace IdentityServer
 
             return resourceslst;
         }
-        
+
         /// <summary>
         /// Parametrise client systems here.
         /// </summary>
@@ -74,8 +74,8 @@ namespace IdentityServer
                 clientList.Add(new Client()
                 {
                     ClientId = item.ClientId,
-
-                    AllowedGrantTypes =GrantTypes.ClientCredentials, //its hardCode as of now--- TODO to make it dynamic
+                    AllowedCorsOrigins = new List<string>() { "*" },
+                    AllowedGrantTypes = GrantTypes.ClientCredentials, //its hardCode as of now--- TODO to make it dynamic
 
                     ClientSecrets =
                     {

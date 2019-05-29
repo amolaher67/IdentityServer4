@@ -382,3 +382,1230 @@
 {"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
 2019-05-20 12:29:22.978 +05:30 [DBG] Getting claims for access token for client: client
 2019-05-20 12:29:22.982 +05:30 [DBG] Token request success.
+2019-05-22 17:01:50.645 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-22 17:01:50.770 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-22 17:01:50.773 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-22 17:01:50.773 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-22 17:01:50.773 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-22 17:01:50.773 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-22 17:01:50.773 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-22 17:01:51.983 +05:30 [DBG] Login Url: /Account/Login
+2019-05-22 17:01:51.999 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-22 17:01:51.999 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-22 17:01:51.999 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-22 17:01:51.999 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-22 17:01:51.999 +05:30 [DBG] Error Url: /home/error
+2019-05-22 17:01:51.999 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-22 17:02:33.064 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-22 17:02:33.068 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-22 17:02:33.068 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-22 17:02:33.072 +05:30 [DBG] Start discovery request
+2019-05-22 17:32:52.914 +05:30 [FTL] Application startup exception
+System.ArgumentNullException: Value cannot be null.
+Parameter name: findValue
+   at System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(X509FindType findType, Object findValue, Boolean validOnly)
+   at IdentityServer.Extensions.LedgeIdentityServerExtension.AddCertificateFromStore(IIdentityServerBuilder builder, IConfiguration options) in E:\BuildingLink\Ledger-Auth\IdentityServer\Extensions\LedgeIdentityServerExtension.cs:line 50
+   at IdentityServer.Extensions.LedgeIdentityServerExtension.AddLedgeIdentityServerExtension(IServiceCollection services, IConfiguration configuration, IHostingEnvironment environment) in E:\BuildingLink\Ledger-Auth\IdentityServer\Extensions\LedgeIdentityServerExtension.cs:line 37
+   at IdentityServer.Startup.ConfigureServices(IServiceCollection services) in E:\BuildingLink\Ledger-Auth\IdentityServer\Startup.cs:line 40
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.ConfigureServices(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureApplicationServices()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Initialize()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 17:32:53.559 +05:30 [ERR] Connection id "0HLMULLLMTNF4", Request id "0HLMULLLMTNF4:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Writing to the response body is invalid for responses with status code 500.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowWritingToResponseBodyNotSupported()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WriteAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-05-24 16:59:40.178 +05:30 [FTL] Application startup exception
+System.ArgumentNullException: Value cannot be null.
+Parameter name: findValue
+   at System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(X509FindType findType, Object findValue, Boolean validOnly)
+   at IdentityServer.Extensions.LedgeIdentityServerExtension.AddCertificateFromStore(IIdentityServerBuilder builder, IConfiguration options) in E:\BuildingLink\Ledger-Auth\IdentityServer\Extensions\LedgeIdentityServerExtension.cs:line 50
+   at IdentityServer.Extensions.LedgeIdentityServerExtension.AddLedgeIdentityServerExtension(IServiceCollection services, IConfiguration configuration, IHostingEnvironment environment) in E:\BuildingLink\Ledger-Auth\IdentityServer\Extensions\LedgeIdentityServerExtension.cs:line 37
+   at IdentityServer.Startup.ConfigureServices(IServiceCollection services) in E:\BuildingLink\Ledger-Auth\IdentityServer\Startup.cs:line 40
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.ConfigureServices(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureApplicationServices()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Initialize()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-24 16:59:41.007 +05:30 [ERR] Connection id "0HLN07CEA6NO7", Request id "0HLN07CEA6NO7:00000001": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot write to the response body, the response has completed.
+Object name: 'HttpResponseStream'.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.ValidateState(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-05-24 17:00:25.693 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-24 17:00:25.741 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-24 17:00:25.743 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-24 17:00:25.743 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-24 17:00:25.744 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-24 17:00:25.744 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-24 17:00:25.744 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-24 17:00:26.222 +05:30 [DBG] Login Url: /Account/Login
+2019-05-24 17:00:26.224 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-24 17:00:26.225 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-24 17:00:26.225 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-24 17:00:26.225 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-24 17:00:26.225 +05:30 [DBG] Error Url: /home/error
+2019-05-24 17:00:26.225 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-24 17:00:29.092 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-24 17:00:29.097 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-24 17:00:29.098 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-24 17:00:29.102 +05:30 [DBG] Start discovery request
+2019-05-24 17:00:40.496 +05:30 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-05-24 17:00:40.500 +05:30 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-05-24 17:00:40.500 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-05-24 17:00:40.881 +05:30 [DBG] Processing signout request for anonymous
+2019-05-24 17:00:40.888 +05:30 [DBG] Start end session request validation
+2019-05-24 17:00:40.906 +05:30 [INF] End session request validation success
+{"ClientId":null,"ClientName":null,"SubjectId":"unknown","PostLogOutUri":null,"State":null,"Raw":{},"$type":"EndSessionRequestValidationLog"}
+2019-05-24 17:00:40.975 +05:30 [DBG] Success validating end session request from null
+2019-05-24 17:04:24.341 +05:30 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-05-24 17:04:24.342 +05:30 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-05-24 17:04:24.342 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-05-24 17:04:24.348 +05:30 [DBG] Start userinfo request
+2019-05-24 17:04:24.459 +05:30 [DBG] Bearer token not found
+2019-05-24 17:04:24.459 +05:30 [ERR] No access token found.
+2019-05-24 17:04:24.488 +05:30 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-05-24 17:04:24.488 +05:30 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-05-24 17:04:24.488 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-05-24 17:04:24.488 +05:30 [DBG] Start userinfo request
+2019-05-24 17:04:24.488 +05:30 [DBG] Bearer token not found
+2019-05-24 17:04:24.489 +05:30 [ERR] No access token found.
+2019-05-24 17:04:44.908 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:04:44.909 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:04:44.909 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:04:44.923 +05:30 [DBG] Start key discovery request
+2019-05-24 17:06:27.772 +05:30 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-05-24 17:06:27.778 +05:30 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-05-24 17:06:27.778 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-05-24 17:06:27.785 +05:30 [DBG] Start authorize request
+2019-05-24 17:06:27.792 +05:30 [DBG] No user present in authorize request
+2019-05-24 17:06:27.797 +05:30 [DBG] Start authorize request protocol validation
+2019-05-24 17:06:27.804 +05:30 [ERR] client_id is missing or too long
+{"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{},"$type":"AuthorizeRequestValidationLog"}
+2019-05-24 17:06:27.806 +05:30 [ERR] Request validation failed
+2019-05-24 17:06:27.807 +05:30 [INF] {"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{},"$type":"AuthorizeRequestValidationLog"}
+2019-05-24 17:06:34.520 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-24 17:06:34.524 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-24 17:06:34.524 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-24 17:06:34.528 +05:30 [WRN] Invalid HTTP request for token endpoint
+2019-05-24 17:06:39.293 +05:30 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-05-24 17:06:39.294 +05:30 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-05-24 17:06:39.294 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-05-24 17:06:39.294 +05:30 [DBG] Start userinfo request
+2019-05-24 17:06:39.294 +05:30 [DBG] Bearer token not found
+2019-05-24 17:06:39.294 +05:30 [ERR] No access token found.
+2019-05-24 17:06:39.304 +05:30 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-05-24 17:06:39.304 +05:30 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-05-24 17:06:39.304 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-05-24 17:06:39.305 +05:30 [DBG] Start userinfo request
+2019-05-24 17:06:39.305 +05:30 [DBG] Bearer token not found
+2019-05-24 17:06:39.305 +05:30 [ERR] No access token found.
+2019-05-24 17:06:52.662 +05:30 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-05-24 17:06:52.663 +05:30 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-05-24 17:06:52.663 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-05-24 17:06:52.664 +05:30 [DBG] Rendering check session result
+2019-05-24 17:06:57.283 +05:30 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2019-05-24 17:06:57.284 +05:30 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2019-05-24 17:06:57.284 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2019-05-24 17:06:57.284 +05:30 [DBG] Processing signout request for anonymous
+2019-05-24 17:06:57.284 +05:30 [DBG] Start end session request validation
+2019-05-24 17:06:57.284 +05:30 [INF] End session request validation success
+{"ClientId":null,"ClientName":null,"SubjectId":"unknown","PostLogOutUri":null,"State":null,"Raw":{},"$type":"EndSessionRequestValidationLog"}
+2019-05-24 17:06:57.284 +05:30 [DBG] Success validating end session request from null
+2019-05-24 17:07:11.533 +05:30 [DBG] Request path /connect/introspect matched to endpoint type Introspection
+2019-05-24 17:07:11.535 +05:30 [DBG] Endpoint enabled: Introspection, successfully created handler: IdentityServer4.Endpoints.IntrospectionEndpoint
+2019-05-24 17:07:11.535 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.IntrospectionEndpoint for /connect/introspect
+2019-05-24 17:07:11.540 +05:30 [WRN] Introspection endpoint only supports POST requests
+2019-05-24 17:07:16.390 +05:30 [DBG] Request path /connect/deviceauthorization matched to endpoint type DeviceAuthorization
+2019-05-24 17:07:16.394 +05:30 [DBG] Endpoint enabled: DeviceAuthorization, successfully created handler: IdentityServer4.Endpoints.DeviceAuthorizationEndpoint
+2019-05-24 17:07:16.394 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DeviceAuthorizationEndpoint for /connect/deviceauthorization
+2019-05-24 17:07:16.402 +05:30 [WRN] Invalid HTTP request for device authorize endpoint
+2019-05-24 17:07:16.403 +05:30 [ERR] Device authorization error: invalid_request:invalid_request
+2019-05-24 17:29:31.090 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-24 17:29:31.125 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-24 17:29:31.127 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-24 17:29:31.127 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-24 17:29:31.128 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-24 17:29:31.128 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-24 17:29:31.128 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-24 17:29:31.619 +05:30 [DBG] Login Url: /Account/Login
+2019-05-24 17:29:31.622 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-24 17:29:31.622 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-24 17:29:31.622 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-24 17:29:31.622 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-24 17:29:31.622 +05:30 [DBG] Error Url: /home/error
+2019-05-24 17:29:31.622 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-24 17:29:35.506 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-24 17:29:35.509 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-24 17:29:35.509 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-24 17:29:35.512 +05:30 [DBG] Start discovery request
+2019-05-24 17:29:37.517 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:29:37.518 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:29:37.519 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:29:37.525 +05:30 [DBG] Start key discovery request
+2019-05-24 17:32:17.250 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-24 17:32:17.284 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-24 17:32:17.287 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-24 17:32:17.287 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-24 17:32:17.287 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-24 17:32:17.287 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-24 17:32:17.287 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-24 17:32:17.710 +05:30 [DBG] Login Url: /Account/Login
+2019-05-24 17:32:17.712 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-24 17:32:17.712 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-24 17:32:17.712 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-24 17:32:17.712 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-24 17:32:17.712 +05:30 [DBG] Error Url: /home/error
+2019-05-24 17:32:17.712 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-24 17:32:17.744 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-24 17:32:17.747 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-24 17:32:17.748 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-24 17:32:17.751 +05:30 [DBG] Start discovery request
+2019-05-24 17:32:23.106 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-24 17:32:23.115 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-24 17:32:23.115 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-24 17:32:23.119 +05:30 [WRN] Invalid HTTP request for token endpoint
+2019-05-24 17:33:37.869 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-24 17:33:37.889 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-24 17:33:37.889 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-24 17:33:37.901 +05:30 [WRN] Invalid HTTP request for token endpoint
+2019-05-24 17:34:38.120 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-24 17:34:38.121 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-24 17:34:38.121 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-24 17:34:38.128 +05:30 [DBG] Start token request.
+2019-05-24 17:34:38.136 +05:30 [DBG] Start client validation
+2019-05-24 17:34:38.142 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-24 17:34:38.147 +05:30 [DBG] Start parsing for secret in post body
+2019-05-24 17:34:39.035 +05:30 [DBG] No secret in post body found
+2019-05-24 17:34:39.036 +05:30 [DBG] Parser found no secret
+2019-05-24 17:34:39.039 +05:30 [ERR] No client identifier found
+2019-05-24 17:36:07.427 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-24 17:36:07.428 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-24 17:36:07.428 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-24 17:36:07.428 +05:30 [DBG] Start token request.
+2019-05-24 17:36:07.428 +05:30 [DBG] Start client validation
+2019-05-24 17:36:07.428 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-24 17:36:07.428 +05:30 [DBG] Start parsing for secret in post body
+2019-05-24 17:36:07.985 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-24 17:36:07.986 +05:30 [DBG] Secret id found: client
+2019-05-24 17:36:07.998 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-24 17:36:08.006 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-24 17:36:08.006 +05:30 [DBG] Client validation success
+2019-05-24 17:36:08.013 +05:30 [DBG] Start token request validation
+2019-05-24 17:36:08.035 +05:30 [DBG] Start client credentials token request validation
+2019-05-24 17:36:08.056 +05:30 [DBG] client credentials token request validation success
+2019-05-24 17:36:08.068 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-24 17:36:08.204 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-24 17:36:08.436 +05:30 [DBG] Token request success.
+2019-05-24 17:39:21.938 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-24 17:39:21.971 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-24 17:39:21.974 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-24 17:39:21.974 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-24 17:39:21.974 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-24 17:39:21.974 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-24 17:39:21.974 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-24 17:39:22.328 +05:30 [DBG] Login Url: /Account/Login
+2019-05-24 17:39:22.331 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-24 17:39:22.331 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-24 17:39:22.331 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-24 17:39:22.331 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-24 17:39:22.331 +05:30 [DBG] Error Url: /home/error
+2019-05-24 17:39:22.331 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-24 17:39:25.228 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-24 17:39:25.231 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-24 17:39:25.231 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-24 17:39:25.234 +05:30 [DBG] Start discovery request
+2019-05-24 17:39:26.987 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:26.994 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:26.995 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:27.000 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:40.647 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:40.648 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:40.648 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:40.648 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:45.885 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:45.885 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:45.886 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:45.886 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:46.404 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:46.405 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:46.405 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:46.405 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:46.613 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:46.613 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:46.613 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:46.613 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:46.815 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:46.815 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:46.815 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:46.815 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:47.009 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:47.009 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:47.009 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:47.009 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:47.179 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:47.179 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:47.179 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:47.179 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:47.352 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:47.352 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:47.353 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:47.353 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:47.518 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:47.518 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:47.518 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:47.518 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:47.695 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:47.695 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:47.695 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:47.695 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:47.873 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:47.873 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:47.873 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:47.873 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:48.048 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:48.048 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:48.048 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:48.049 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:48.235 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:39:48.236 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:39:48.236 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:39:48.236 +05:30 [DBG] Start key discovery request
+2019-05-24 17:39:55.326 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-24 17:39:55.358 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-24 17:39:55.361 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-24 17:39:55.361 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-24 17:39:55.361 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-24 17:39:55.361 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-24 17:39:55.361 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-24 17:39:55.614 +05:30 [DBG] Login Url: /Account/Login
+2019-05-24 17:39:55.616 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-24 17:39:55.616 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-24 17:39:55.616 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-24 17:39:55.616 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-24 17:39:55.616 +05:30 [DBG] Error Url: /home/error
+2019-05-24 17:39:55.616 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-24 17:40:02.447 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-24 17:40:02.450 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-24 17:40:02.451 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-24 17:40:02.454 +05:30 [DBG] Start discovery request
+2019-05-24 17:40:04.411 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-24 17:40:04.413 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-24 17:40:04.413 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-24 17:40:04.419 +05:30 [DBG] Start key discovery request
+2019-05-24 17:54:21.306 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-24 17:54:21.338 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-24 17:54:21.340 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-24 17:54:21.340 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-24 17:54:21.340 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-24 17:54:21.340 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-24 17:54:21.340 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-24 17:54:21.595 +05:30 [DBG] Login Url: /Account/Login
+2019-05-24 17:54:21.596 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-24 17:54:21.597 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-24 17:54:21.597 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-24 17:54:21.597 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-24 17:54:21.597 +05:30 [DBG] Error Url: /home/error
+2019-05-24 17:54:21.597 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-24 18:32:01.968 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-24 18:32:02.002 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-24 18:32:02.004 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-24 18:32:02.004 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-24 18:32:02.004 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-24 18:32:02.004 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-24 18:32:02.004 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-24 18:32:02.267 +05:30 [DBG] Login Url: /Account/Login
+2019-05-24 18:32:02.269 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-24 18:32:02.269 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-24 18:32:02.269 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-24 18:32:02.269 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-24 18:32:02.269 +05:30 [DBG] Error Url: /home/error
+2019-05-24 18:32:02.269 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-24 19:05:07.379 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-24 19:05:07.409 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-24 19:05:07.412 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-24 19:05:07.412 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-24 19:05:07.412 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-24 19:05:07.412 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-24 19:05:07.412 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-24 19:05:07.657 +05:30 [DBG] Login Url: /Account/Login
+2019-05-24 19:05:07.659 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-24 19:05:07.659 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-24 19:05:07.659 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-24 19:05:07.659 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-24 19:05:07.659 +05:30 [DBG] Error Url: /home/error
+2019-05-24 19:05:07.659 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 11:56:19.501 +05:30 [ERR] A matching key couldn't be found in the store
+2019-05-27 11:57:05.628 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 11:57:05.679 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 11:57:05.682 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 11:57:05.682 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 11:57:05.682 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 11:57:05.682 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 11:57:05.682 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 11:57:06.416 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 11:57:06.419 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 11:57:06.419 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 11:57:06.419 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 11:57:06.420 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 11:57:06.420 +05:30 [DBG] Error Url: /home/error
+2019-05-27 11:57:06.420 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 12:02:37.560 +05:30 [FTL] Application startup exception
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.Collections.CollectionBase.System.Collections.IList.get_Item(Int32 index)
+   at System.Security.Cryptography.X509Certificates.X509CertificateCollection.get_Item(Int32 index)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2Collection.get_Item(Int32 index)
+   at IdentityServer.Extensions.LedgeIdentityServerExtension.AddCertificateFromStore(IIdentityServerBuilder builder, IConfiguration options)
+   at IdentityServer.Extensions.LedgeIdentityServerExtension.AddLedgeIdentityServerExtension(IServiceCollection services, IConfiguration configuration, IHostingEnvironment environment)
+   at IdentityServer.Startup.ConfigureServices(IServiceCollection services)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.ConfigureServices(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureApplicationServices()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Initialize()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-27 12:02:38.519 +05:30 [ERR] Connection id "0HLN2DKEANFRK", Request id "0HLN2DKEANFRK:00000001": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot write to the response body, the response has completed.
+Object name: 'HttpResponseStream'.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.ValidateState(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-05-27 12:03:18.777 +05:30 [FTL] Application startup exception
+System.ArgumentException: The OID value was invalid.
+   at Internal.Cryptography.Pal.FindPal.ValidateOidValue(String keyValue)
+   at Internal.Cryptography.Pal.FindPal.NormalizeOid(String maybeOid, OidGroup expectedGroup)
+   at Internal.Cryptography.Pal.FindPal.ConfirmedOidValue(IFindPal findPal, Object findValue, OidGroup oidGroup)
+   at Internal.Cryptography.Pal.FindPal.FindFromCollection(X509Certificate2Collection coll, X509FindType findType, Object findValue, Boolean validOnly)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(X509FindType findType, Object findValue, Boolean validOnly)
+   at IdentityServer.Extensions.LedgeIdentityServerExtension.AddCertificateFromStore(IIdentityServerBuilder builder, IConfiguration options) in E:\BuildingLink\Ledger-Auth\IdentityServer\Extensions\LedgeIdentityServerExtension.cs:line 57
+   at IdentityServer.Extensions.LedgeIdentityServerExtension.AddLedgeIdentityServerExtension(IServiceCollection services, IConfiguration configuration, IHostingEnvironment environment) in E:\BuildingLink\Ledger-Auth\IdentityServer\Extensions\LedgeIdentityServerExtension.cs:line 44
+   at IdentityServer.Startup.ConfigureServices(IServiceCollection services) in E:\BuildingLink\Ledger-Auth\IdentityServer\Startup.cs:line 40
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.ConfigureServices(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureApplicationServices()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Initialize()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-27 12:03:19.610 +05:30 [ERR] Connection id "0HLN2DKQISE8S", Request id "0HLN2DKQISE8S:00000001": An unhandled exception was thrown by the application.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: values
+   at System.String.Join(String separator, IEnumerable`1 values)
+   at Microsoft.Extensions.RazorViews.BaseView.EndWriteAttribute()
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-05-27 12:08:08.616 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 12:08:08.680 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 12:08:08.685 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 12:08:08.685 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 12:08:08.685 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 12:08:08.685 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 12:08:08.685 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 12:08:09.150 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 12:08:09.155 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 12:08:09.155 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 12:08:09.155 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 12:08:09.155 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 12:08:09.155 +05:30 [DBG] Error Url: /home/error
+2019-05-27 12:08:09.156 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 12:11:42.900 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 12:11:42.967 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 12:11:42.973 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 12:11:42.973 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 12:11:42.973 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 12:11:42.973 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 12:11:42.973 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 12:11:43.440 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 12:11:43.444 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 12:11:43.444 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 12:11:43.444 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 12:11:43.444 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 12:11:43.444 +05:30 [DBG] Error Url: /home/error
+2019-05-27 12:11:43.444 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 12:13:02.204 +05:30 [FTL] Application startup exception
+System.InvalidOperationException: X509 certificate does not have a private key.
+   at Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensionsCrypto.AddSigningCredential(IIdentityServerBuilder builder, X509Certificate2 certificate) in C:\local\identity\server4\IdentityServer4\src\Configuration\DependencyInjection\BuilderExtensions\Crypto.cs:line 60
+   at IdentityServer.Extensions.LedgeIdentityServerExtension.AddCertificateFromStore(IIdentityServerBuilder builder, IConfiguration options) in E:\BuildingLink\Ledger-Auth\IdentityServer\Extensions\LedgeIdentityServerExtension.cs:line 61
+   at IdentityServer.Extensions.LedgeIdentityServerExtension.AddLedgeIdentityServerExtension(IServiceCollection services, IConfiguration configuration, IHostingEnvironment environment) in E:\BuildingLink\Ledger-Auth\IdentityServer\Extensions\LedgeIdentityServerExtension.cs:line 44
+   at IdentityServer.Startup.ConfigureServices(IServiceCollection services) in E:\BuildingLink\Ledger-Auth\IdentityServer\Startup.cs:line 40
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.ConfigureServices(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureApplicationServices()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Initialize()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-27 12:13:03.037 +05:30 [ERR] Connection id "0HLN2DQ8FB81M", Request id "0HLN2DQ8FB81M:00000001": An unhandled exception was thrown by the application.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: values
+   at System.String.Join(String separator, IEnumerable`1 values)
+   at Microsoft.Extensions.RazorViews.BaseView.EndWriteAttribute()
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-05-27 12:18:53.260 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 12:18:53.334 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 12:18:53.342 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 12:18:53.343 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 12:18:53.343 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 12:18:53.343 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 12:18:53.343 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 12:18:54.281 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 12:18:54.286 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 12:18:54.286 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 12:18:54.286 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 12:18:54.287 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 12:18:54.287 +05:30 [DBG] Error Url: /home/error
+2019-05-27 12:18:54.287 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 12:18:57.404 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 12:18:57.410 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 12:18:57.411 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 12:18:57.428 +05:30 [DBG] Start discovery request
+2019-05-27 12:19:04.531 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-27 12:19:04.533 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-27 12:19:04.533 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-27 12:19:04.544 +05:30 [DBG] Start key discovery request
+2019-05-27 12:24:56.175 +05:30 [DBG] CORS request made for path: /connect/token from origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 12:24:56.180 +05:30 [DBG] Client list checked and origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop is not allowed
+2019-05-27 12:24:56.180 +05:30 [WRN] CorsPolicyService did not allow origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 12:24:56.181 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 12:24:56.196 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 12:24:56.196 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 12:24:56.538 +05:30 [DBG] Start token request.
+2019-05-27 12:24:56.556 +05:30 [DBG] Start client validation
+2019-05-27 12:24:56.569 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-27 12:24:56.577 +05:30 [DBG] Start parsing for secret in post body
+2019-05-27 12:24:56.772 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-27 12:24:56.772 +05:30 [DBG] Secret id found: client
+2019-05-27 12:24:56.797 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-27 12:24:56.813 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-27 12:24:56.813 +05:30 [DBG] Client validation success
+2019-05-27 12:24:56.833 +05:30 [DBG] Start token request validation
+2019-05-27 12:24:56.847 +05:30 [DBG] Start client credentials token request validation
+2019-05-27 12:24:56.892 +05:30 [DBG] client credentials token request validation success
+2019-05-27 12:24:56.913 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-27 12:24:57.019 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-27 12:24:57.947 +05:30 [FTL] Unhandled exception: Keyset does not exist
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Keyset does not exist
+   at Internal.NativeCrypto.CapiHelper.CreateProvHandle(CspParameters parameters, Boolean randomKeyContainer)
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeProvHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeKeyHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(Int32 keySize, CspParameters parameters, Boolean useDefaultKeySize)
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(CspParameters parameters)
+   at Internal.Cryptography.Pal.CertificatePal.<>c.<GetRSAPrivateKey>b__61_0(CspParameters csp)
+   at Internal.Cryptography.Pal.CertificatePal.GetPrivateKey[T](Func`2 createCsp, Func`2 createCng)
+   at Internal.Cryptography.Pal.CertificatePal.GetRSAPrivateKey()
+   at System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKey() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 86
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKeyStatus() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 146
+   at Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\AsymmetricSignatureProvider.cs:line 127
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\CryptoProviderFactory.cs:line 442
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.JsonWebTokens\JwtTokenUtilities.cs:line 69
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token) in C:\agent2\_work\56\s\src\System.IdentityModel.Tokens.Jwt\JwtSecurityTokenHandler.cs:line 804
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateJwtAsync(JwtSecurityToken jwt) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 116
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 63
+   at IdentityServer4.Services.DefaultTokenService.CreateSecurityTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenService.cs:line 210
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 400
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+2019-05-27 12:24:58.170 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Keyset does not exist
+   at Internal.NativeCrypto.CapiHelper.CreateProvHandle(CspParameters parameters, Boolean randomKeyContainer)
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeProvHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeKeyHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(Int32 keySize, CspParameters parameters, Boolean useDefaultKeySize)
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(CspParameters parameters)
+   at Internal.Cryptography.Pal.CertificatePal.<>c.<GetRSAPrivateKey>b__61_0(CspParameters csp)
+   at Internal.Cryptography.Pal.CertificatePal.GetPrivateKey[T](Func`2 createCsp, Func`2 createCng)
+   at Internal.Cryptography.Pal.CertificatePal.GetRSAPrivateKey()
+   at System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKey() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 86
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKeyStatus() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 146
+   at Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\AsymmetricSignatureProvider.cs:line 127
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\CryptoProviderFactory.cs:line 442
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.JsonWebTokens\JwtTokenUtilities.cs:line 69
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token) in C:\agent2\_work\56\s\src\System.IdentityModel.Tokens.Jwt\JwtSecurityTokenHandler.cs:line 804
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateJwtAsync(JwtSecurityToken jwt) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 116
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 63
+   at IdentityServer4.Services.DefaultTokenService.CreateSecurityTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenService.cs:line 210
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 400
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 69
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-27 12:27:12.797 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 12:27:12.867 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 12:27:12.873 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 12:27:12.873 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 12:27:12.873 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 12:27:12.874 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 12:27:12.874 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 12:27:13.415 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 12:27:13.420 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 12:27:13.420 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 12:27:13.421 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 12:27:13.421 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 12:27:13.422 +05:30 [DBG] Error Url: /home/error
+2019-05-27 12:27:13.422 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 12:27:14.506 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 12:27:14.512 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 12:27:14.513 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 12:27:14.520 +05:30 [DBG] Start discovery request
+2019-05-27 12:27:37.939 +05:30 [DBG] CORS request made for path: /connect/token from origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 12:27:37.945 +05:30 [DBG] Client list checked and origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop is not allowed
+2019-05-27 12:27:37.945 +05:30 [WRN] CorsPolicyService did not allow origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 12:27:37.946 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 12:27:37.960 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 12:27:37.961 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 12:27:37.976 +05:30 [DBG] Start token request.
+2019-05-27 12:27:37.989 +05:30 [DBG] Start client validation
+2019-05-27 12:27:38.005 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-27 12:27:38.012 +05:30 [DBG] Start parsing for secret in post body
+2019-05-27 12:27:38.047 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-27 12:27:38.047 +05:30 [DBG] Secret id found: client
+2019-05-27 12:27:38.075 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-27 12:27:38.095 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-27 12:27:38.095 +05:30 [DBG] Client validation success
+2019-05-27 12:27:38.114 +05:30 [DBG] Start token request validation
+2019-05-27 12:27:38.128 +05:30 [DBG] Start client credentials token request validation
+2019-05-27 12:27:38.173 +05:30 [DBG] client credentials token request validation success
+2019-05-27 12:27:38.201 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-27 12:27:38.267 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-27 12:27:39.106 +05:30 [FTL] Unhandled exception: Keyset does not exist
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Keyset does not exist
+   at Internal.NativeCrypto.CapiHelper.CreateProvHandle(CspParameters parameters, Boolean randomKeyContainer)
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeProvHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeKeyHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(Int32 keySize, CspParameters parameters, Boolean useDefaultKeySize)
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(CspParameters parameters)
+   at Internal.Cryptography.Pal.CertificatePal.<>c.<GetRSAPrivateKey>b__61_0(CspParameters csp)
+   at Internal.Cryptography.Pal.CertificatePal.GetPrivateKey[T](Func`2 createCsp, Func`2 createCng)
+   at Internal.Cryptography.Pal.CertificatePal.GetRSAPrivateKey()
+   at System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKey() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 86
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKeyStatus() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 146
+   at Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\AsymmetricSignatureProvider.cs:line 127
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\CryptoProviderFactory.cs:line 442
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.JsonWebTokens\JwtTokenUtilities.cs:line 69
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token) in C:\agent2\_work\56\s\src\System.IdentityModel.Tokens.Jwt\JwtSecurityTokenHandler.cs:line 804
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateJwtAsync(JwtSecurityToken jwt) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 116
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 63
+   at IdentityServer4.Services.DefaultTokenService.CreateSecurityTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenService.cs:line 210
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 400
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+2019-05-27 12:27:39.309 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Keyset does not exist
+   at Internal.NativeCrypto.CapiHelper.CreateProvHandle(CspParameters parameters, Boolean randomKeyContainer)
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeProvHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeKeyHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(Int32 keySize, CspParameters parameters, Boolean useDefaultKeySize)
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(CspParameters parameters)
+   at Internal.Cryptography.Pal.CertificatePal.<>c.<GetRSAPrivateKey>b__61_0(CspParameters csp)
+   at Internal.Cryptography.Pal.CertificatePal.GetPrivateKey[T](Func`2 createCsp, Func`2 createCng)
+   at Internal.Cryptography.Pal.CertificatePal.GetRSAPrivateKey()
+   at System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKey() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 86
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKeyStatus() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 146
+   at Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\AsymmetricSignatureProvider.cs:line 127
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\CryptoProviderFactory.cs:line 442
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.JsonWebTokens\JwtTokenUtilities.cs:line 69
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token) in C:\agent2\_work\56\s\src\System.IdentityModel.Tokens.Jwt\JwtSecurityTokenHandler.cs:line 804
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateJwtAsync(JwtSecurityToken jwt) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 116
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 63
+   at IdentityServer4.Services.DefaultTokenService.CreateSecurityTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenService.cs:line 210
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 400
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 69
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-27 12:30:00.535 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 12:30:00.615 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 12:30:00.621 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 12:30:00.622 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 12:30:00.622 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 12:30:00.622 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 12:30:00.622 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 12:30:01.352 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 12:30:01.357 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 12:30:01.357 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 12:30:01.358 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 12:30:01.358 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 12:30:01.358 +05:30 [DBG] Error Url: /home/error
+2019-05-27 12:30:01.359 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 12:30:10.501 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 12:30:10.509 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 12:30:10.509 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 12:30:10.518 +05:30 [DBG] Start discovery request
+2019-05-27 12:30:17.803 +05:30 [DBG] CORS request made for path: /connect/token from origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 12:30:17.809 +05:30 [DBG] Client list checked and origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop is not allowed
+2019-05-27 12:30:17.809 +05:30 [WRN] CorsPolicyService did not allow origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 12:30:17.810 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 12:30:17.829 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 12:30:17.829 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 12:30:17.848 +05:30 [DBG] Start token request.
+2019-05-27 12:30:17.861 +05:30 [DBG] Start client validation
+2019-05-27 12:30:17.876 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-27 12:30:17.884 +05:30 [DBG] Start parsing for secret in post body
+2019-05-27 12:30:17.931 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-27 12:30:17.931 +05:30 [DBG] Secret id found: client
+2019-05-27 12:30:17.970 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-27 12:30:17.989 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-27 12:30:17.989 +05:30 [DBG] Client validation success
+2019-05-27 12:30:18.015 +05:30 [DBG] Start token request validation
+2019-05-27 12:30:18.033 +05:30 [DBG] Start client credentials token request validation
+2019-05-27 12:30:18.089 +05:30 [DBG] client credentials token request validation success
+2019-05-27 12:30:18.122 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-27 12:30:18.219 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-27 12:30:19.068 +05:30 [FTL] Unhandled exception: Keyset does not exist
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Keyset does not exist
+   at Internal.NativeCrypto.CapiHelper.CreateProvHandle(CspParameters parameters, Boolean randomKeyContainer)
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeProvHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeKeyHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(Int32 keySize, CspParameters parameters, Boolean useDefaultKeySize)
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(CspParameters parameters)
+   at Internal.Cryptography.Pal.CertificatePal.<>c.<GetRSAPrivateKey>b__61_0(CspParameters csp)
+   at Internal.Cryptography.Pal.CertificatePal.GetPrivateKey[T](Func`2 createCsp, Func`2 createCng)
+   at Internal.Cryptography.Pal.CertificatePal.GetRSAPrivateKey()
+   at System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKey() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 86
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKeyStatus() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 146
+   at Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\AsymmetricSignatureProvider.cs:line 127
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\CryptoProviderFactory.cs:line 442
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.JsonWebTokens\JwtTokenUtilities.cs:line 69
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token) in C:\agent2\_work\56\s\src\System.IdentityModel.Tokens.Jwt\JwtSecurityTokenHandler.cs:line 804
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateJwtAsync(JwtSecurityToken jwt) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 116
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 63
+   at IdentityServer4.Services.DefaultTokenService.CreateSecurityTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenService.cs:line 210
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 400
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+2019-05-27 12:30:19.302 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Keyset does not exist
+   at Internal.NativeCrypto.CapiHelper.CreateProvHandle(CspParameters parameters, Boolean randomKeyContainer)
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeProvHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeKeyHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(Int32 keySize, CspParameters parameters, Boolean useDefaultKeySize)
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(CspParameters parameters)
+   at Internal.Cryptography.Pal.CertificatePal.<>c.<GetRSAPrivateKey>b__61_0(CspParameters csp)
+   at Internal.Cryptography.Pal.CertificatePal.GetPrivateKey[T](Func`2 createCsp, Func`2 createCng)
+   at Internal.Cryptography.Pal.CertificatePal.GetRSAPrivateKey()
+   at System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKey() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 86
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKeyStatus() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 146
+   at Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\AsymmetricSignatureProvider.cs:line 127
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\CryptoProviderFactory.cs:line 442
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.JsonWebTokens\JwtTokenUtilities.cs:line 69
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token) in C:\agent2\_work\56\s\src\System.IdentityModel.Tokens.Jwt\JwtSecurityTokenHandler.cs:line 804
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateJwtAsync(JwtSecurityToken jwt) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 116
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 63
+   at IdentityServer4.Services.DefaultTokenService.CreateSecurityTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenService.cs:line 210
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 400
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 69
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-27 12:59:19.261 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 12:59:19.762 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 12:59:19.796 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 12:59:19.799 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 12:59:19.799 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 12:59:19.800 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 12:59:19.801 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 12:59:23.232 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 12:59:23.261 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 12:59:23.262 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 12:59:23.263 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 12:59:23.264 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 12:59:23.265 +05:30 [DBG] Error Url: /home/error
+2019-05-27 12:59:23.265 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 12:59:34.154 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 12:59:34.203 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 12:59:34.208 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 12:59:34.251 +05:30 [DBG] Start discovery request
+2019-05-27 12:59:46.942 +05:30 [DBG] CORS request made for path: /connect/token from origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 12:59:46.974 +05:30 [DBG] Client list checked and origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop is not allowed
+2019-05-27 12:59:46.974 +05:30 [WRN] CorsPolicyService did not allow origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 12:59:46.978 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 12:59:47.066 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 12:59:47.067 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 12:59:47.183 +05:30 [DBG] Start token request.
+2019-05-27 12:59:47.279 +05:30 [DBG] Start client validation
+2019-05-27 12:59:47.362 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-27 12:59:47.417 +05:30 [DBG] Start parsing for secret in post body
+2019-05-27 12:59:47.740 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-27 12:59:47.741 +05:30 [DBG] Secret id found: client
+2019-05-27 12:59:47.958 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-27 12:59:48.073 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-27 12:59:48.994 +05:30 [DBG] Client validation success
+2019-05-27 12:59:49.123 +05:30 [DBG] Start token request validation
+2019-05-27 12:59:49.234 +05:30 [DBG] Start client credentials token request validation
+2019-05-27 12:59:49.513 +05:30 [DBG] client credentials token request validation success
+2019-05-27 12:59:49.667 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-27 12:59:50.072 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-27 12:59:54.003 +05:30 [FTL] Unhandled exception: Keyset does not exist
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Keyset does not exist
+   at Internal.NativeCrypto.CapiHelper.CreateProvHandle(CspParameters parameters, Boolean randomKeyContainer)
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeProvHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeKeyHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(Int32 keySize, CspParameters parameters, Boolean useDefaultKeySize)
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(CspParameters parameters)
+   at Internal.Cryptography.Pal.CertificatePal.<>c.<GetRSAPrivateKey>b__61_0(CspParameters csp)
+   at Internal.Cryptography.Pal.CertificatePal.GetPrivateKey[T](Func`2 createCsp, Func`2 createCng)
+   at Internal.Cryptography.Pal.CertificatePal.GetRSAPrivateKey()
+   at System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKey() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 86
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKeyStatus() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 146
+   at Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\AsymmetricSignatureProvider.cs:line 127
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\CryptoProviderFactory.cs:line 442
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.JsonWebTokens\JwtTokenUtilities.cs:line 69
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token) in C:\agent2\_work\56\s\src\System.IdentityModel.Tokens.Jwt\JwtSecurityTokenHandler.cs:line 804
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateJwtAsync(JwtSecurityToken jwt) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 116
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 63
+   at IdentityServer4.Services.DefaultTokenService.CreateSecurityTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenService.cs:line 210
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 400
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+2019-05-27 12:59:55.204 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Keyset does not exist
+   at Internal.NativeCrypto.CapiHelper.CreateProvHandle(CspParameters parameters, Boolean randomKeyContainer)
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeProvHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeKeyHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(Int32 keySize, CspParameters parameters, Boolean useDefaultKeySize)
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(CspParameters parameters)
+   at Internal.Cryptography.Pal.CertificatePal.<>c.<GetRSAPrivateKey>b__61_0(CspParameters csp)
+   at Internal.Cryptography.Pal.CertificatePal.GetPrivateKey[T](Func`2 createCsp, Func`2 createCng)
+   at Internal.Cryptography.Pal.CertificatePal.GetRSAPrivateKey()
+   at System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKey() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 86
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKeyStatus() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 146
+   at Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\AsymmetricSignatureProvider.cs:line 127
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\CryptoProviderFactory.cs:line 442
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.JsonWebTokens\JwtTokenUtilities.cs:line 69
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token) in C:\agent2\_work\56\s\src\System.IdentityModel.Tokens.Jwt\JwtSecurityTokenHandler.cs:line 804
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateJwtAsync(JwtSecurityToken jwt) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 116
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 63
+   at IdentityServer4.Services.DefaultTokenService.CreateSecurityTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenService.cs:line 210
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 400
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 69
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-27 14:31:26.691 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 14:31:26.721 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 14:31:26.723 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 14:31:26.723 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 14:31:26.723 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 14:31:26.723 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 14:31:26.723 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 14:31:27.024 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 14:31:27.026 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 14:31:27.026 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 14:31:27.026 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 14:31:27.026 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 14:31:27.026 +05:30 [DBG] Error Url: /home/error
+2019-05-27 14:31:27.026 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 14:31:34.050 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 14:31:34.053 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 14:31:34.053 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 14:31:34.057 +05:30 [DBG] Start discovery request
+2019-05-27 14:31:38.913 +05:30 [DBG] CORS request made for path: /connect/token from origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 14:31:38.915 +05:30 [DBG] Client list checked and origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop is not allowed
+2019-05-27 14:31:38.915 +05:30 [WRN] CorsPolicyService did not allow origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 14:31:38.915 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 14:31:38.922 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 14:31:38.922 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 14:31:38.929 +05:30 [DBG] Start token request.
+2019-05-27 14:31:38.945 +05:30 [DBG] Start client validation
+2019-05-27 14:31:38.952 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-27 14:31:38.956 +05:30 [DBG] Start parsing for secret in post body
+2019-05-27 14:31:38.969 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-27 14:31:38.970 +05:30 [DBG] Secret id found: client
+2019-05-27 14:31:38.980 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-27 14:31:38.988 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-27 14:31:38.988 +05:30 [DBG] Client validation success
+2019-05-27 14:31:39.000 +05:30 [DBG] Start token request validation
+2019-05-27 14:31:39.008 +05:30 [DBG] Start client credentials token request validation
+2019-05-27 14:31:39.030 +05:30 [DBG] client credentials token request validation success
+2019-05-27 14:31:39.041 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-27 14:31:39.068 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-27 14:31:39.487 +05:30 [FTL] Unhandled exception: Keyset does not exist
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Keyset does not exist
+   at Internal.NativeCrypto.CapiHelper.CreateProvHandle(CspParameters parameters, Boolean randomKeyContainer)
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeProvHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeKeyHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(Int32 keySize, CspParameters parameters, Boolean useDefaultKeySize)
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(CspParameters parameters)
+   at Internal.Cryptography.Pal.CertificatePal.<>c.<GetRSAPrivateKey>b__61_0(CspParameters csp)
+   at Internal.Cryptography.Pal.CertificatePal.GetPrivateKey[T](Func`2 createCsp, Func`2 createCng)
+   at Internal.Cryptography.Pal.CertificatePal.GetRSAPrivateKey()
+   at System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKey() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 86
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKeyStatus() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 146
+   at Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\AsymmetricSignatureProvider.cs:line 127
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\CryptoProviderFactory.cs:line 442
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.JsonWebTokens\JwtTokenUtilities.cs:line 69
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token) in C:\agent2\_work\56\s\src\System.IdentityModel.Tokens.Jwt\JwtSecurityTokenHandler.cs:line 804
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateJwtAsync(JwtSecurityToken jwt) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 116
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 63
+   at IdentityServer4.Services.DefaultTokenService.CreateSecurityTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenService.cs:line 210
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 400
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+2019-05-27 14:31:39.594 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Keyset does not exist
+   at Internal.NativeCrypto.CapiHelper.CreateProvHandle(CspParameters parameters, Boolean randomKeyContainer)
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeProvHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider.get_SafeKeyHandle()
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(Int32 keySize, CspParameters parameters, Boolean useDefaultKeySize)
+   at System.Security.Cryptography.RSACryptoServiceProvider..ctor(CspParameters parameters)
+   at Internal.Cryptography.Pal.CertificatePal.<>c.<GetRSAPrivateKey>b__61_0(CspParameters csp)
+   at Internal.Cryptography.Pal.CertificatePal.GetPrivateKey[T](Func`2 createCsp, Func`2 createCng)
+   at Internal.Cryptography.Pal.CertificatePal.GetRSAPrivateKey()
+   at System.Security.Cryptography.X509Certificates.X509Certificate2.get_PrivateKey()
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKey() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 86
+   at Microsoft.IdentityModel.Tokens.X509SecurityKey.get_PrivateKeyStatus() in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\X509SecurityKey.cs:line 146
+   at Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\AsymmetricSignatureProvider.cs:line 127
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Tokens\CryptoProviderFactory.cs:line 442
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.JsonWebTokens\JwtTokenUtilities.cs:line 69
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token) in C:\agent2\_work\56\s\src\System.IdentityModel.Tokens.Jwt\JwtSecurityTokenHandler.cs:line 804
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateJwtAsync(JwtSecurityToken jwt) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 116
+   at IdentityServer4.Services.DefaultTokenCreationService.CreateTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenCreationService.cs:line 63
+   at IdentityServer4.Services.DefaultTokenService.CreateSecurityTokenAsync(Token token) in C:\local\identity\server4\IdentityServer4\src\Services\Default\DefaultTokenService.cs:line 210
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 400
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 69
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-27 14:43:58.473 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 14:43:58.502 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 14:43:58.504 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 14:43:58.504 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 14:43:58.504 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 14:43:58.504 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 14:43:58.505 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 14:43:58.683 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 14:43:58.685 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 14:43:58.686 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 14:43:58.686 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 14:43:58.686 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 14:43:58.686 +05:30 [DBG] Error Url: /home/error
+2019-05-27 14:43:58.686 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 14:44:02.424 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 14:44:02.426 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 14:44:02.426 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 14:44:02.429 +05:30 [DBG] Start discovery request
+2019-05-27 14:44:05.315 +05:30 [DBG] CORS request made for path: /connect/token from origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 14:44:05.316 +05:30 [DBG] Client list checked and origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop is not allowed
+2019-05-27 14:44:05.316 +05:30 [WRN] CorsPolicyService did not allow origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 14:44:05.316 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 14:44:05.321 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 14:44:05.321 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 14:44:05.327 +05:30 [DBG] Start token request.
+2019-05-27 14:44:05.332 +05:30 [DBG] Start client validation
+2019-05-27 14:44:05.337 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-27 14:44:05.340 +05:30 [DBG] Start parsing for secret in post body
+2019-05-27 14:44:05.352 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-27 14:44:05.352 +05:30 [DBG] Secret id found: client
+2019-05-27 14:44:05.362 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-27 14:44:05.368 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-27 14:44:05.368 +05:30 [DBG] Client validation success
+2019-05-27 14:44:05.376 +05:30 [DBG] Start token request validation
+2019-05-27 14:44:05.382 +05:30 [DBG] Start client credentials token request validation
+2019-05-27 14:44:05.406 +05:30 [DBG] client credentials token request validation success
+2019-05-27 14:44:05.415 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-27 14:44:05.441 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-27 14:44:05.532 +05:30 [DBG] Token request success.
+2019-05-27 16:44:06.019 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 16:44:06.091 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 16:44:06.098 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 16:44:06.098 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 16:44:06.098 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 16:44:06.098 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 16:44:06.098 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 16:44:06.856 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 16:44:06.860 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 16:44:06.861 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 16:44:06.861 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 16:44:06.861 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 16:44:06.861 +05:30 [DBG] Error Url: /home/error
+2019-05-27 16:44:06.861 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 16:44:27.602 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 16:44:27.609 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 16:44:27.609 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 16:44:27.618 +05:30 [DBG] Start discovery request
+2019-05-27 16:44:41.639 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 16:44:41.639 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 16:44:41.639 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 16:44:41.640 +05:30 [DBG] Start discovery request
+2019-05-27 16:45:14.513 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 16:45:14.581 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 16:45:14.586 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 16:45:14.587 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 16:45:14.587 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 16:45:14.587 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 16:45:14.587 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 16:45:17.348 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 16:45:17.353 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 16:45:17.353 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 16:45:17.353 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 16:45:17.353 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 16:45:17.353 +05:30 [DBG] Error Url: /home/error
+2019-05-27 16:45:17.353 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 16:45:24.211 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 16:45:24.217 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 16:45:24.217 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 16:45:24.225 +05:30 [DBG] Start discovery request
+2019-05-27 16:45:47.896 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 16:45:47.897 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 16:45:47.897 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 16:45:47.898 +05:30 [DBG] Start discovery request
+2019-05-27 16:47:12.145 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 16:47:12.145 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 16:47:12.145 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 16:47:12.146 +05:30 [DBG] Start discovery request
+2019-05-27 16:50:36.874 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 16:50:36.893 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 16:50:36.893 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 16:50:36.900 +05:30 [WRN] Invalid HTTP request for token endpoint
+2019-05-27 16:51:00.868 +05:30 [DBG] CORS request made for path: /connect/token from origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 16:51:00.874 +05:30 [DBG] Client list checked and origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop is not allowed
+2019-05-27 16:51:00.874 +05:30 [WRN] CorsPolicyService did not allow origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 16:51:00.874 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 16:51:00.875 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 16:51:00.875 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 16:51:00.890 +05:30 [DBG] Start token request.
+2019-05-27 16:51:00.907 +05:30 [DBG] Start client validation
+2019-05-27 16:51:00.920 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-27 16:51:00.927 +05:30 [DBG] Start parsing for secret in post body
+2019-05-27 16:51:00.957 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-27 16:51:00.957 +05:30 [DBG] Secret id found: client
+2019-05-27 16:51:00.981 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-27 16:51:00.997 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-27 16:51:00.998 +05:30 [DBG] Client validation success
+2019-05-27 16:51:01.017 +05:30 [DBG] Start token request validation
+2019-05-27 16:51:01.032 +05:30 [DBG] Start client credentials token request validation
+2019-05-27 16:51:01.077 +05:30 [DBG] client credentials token request validation success
+2019-05-27 16:51:01.101 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-27 16:51:01.167 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-27 16:51:01.392 +05:30 [DBG] Token request success.
+2019-05-27 16:51:11.258 +05:30 [DBG] CORS request made for path: /connect/token from origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 16:51:11.258 +05:30 [DBG] Client list checked and origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop is not allowed
+2019-05-27 16:51:11.258 +05:30 [WRN] CorsPolicyService did not allow origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 16:51:11.258 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 16:51:11.259 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 16:51:11.259 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 16:51:11.259 +05:30 [DBG] Start token request.
+2019-05-27 16:51:11.259 +05:30 [DBG] Start client validation
+2019-05-27 16:51:11.259 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-27 16:51:11.260 +05:30 [DBG] Start parsing for secret in post body
+2019-05-27 16:51:11.261 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-27 16:51:11.261 +05:30 [DBG] Secret id found: client
+2019-05-27 16:51:11.261 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-27 16:51:11.261 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-27 16:51:11.261 +05:30 [DBG] Client validation success
+2019-05-27 16:51:11.262 +05:30 [DBG] Start token request validation
+2019-05-27 16:51:11.262 +05:30 [DBG] Start client credentials token request validation
+2019-05-27 16:51:11.262 +05:30 [DBG] client credentials token request validation success
+2019-05-27 16:51:11.263 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-27 16:51:11.263 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-27 16:51:11.271 +05:30 [DBG] Token request success.
+2019-05-27 16:51:17.215 +05:30 [DBG] CORS request made for path: /connect/token from origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 16:51:17.215 +05:30 [DBG] Client list checked and origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop is not allowed
+2019-05-27 16:51:17.215 +05:30 [WRN] CorsPolicyService did not allow origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 16:51:17.215 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 16:51:17.216 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 16:51:17.216 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 16:51:17.216 +05:30 [DBG] Start token request.
+2019-05-27 16:51:17.216 +05:30 [DBG] Start client validation
+2019-05-27 16:51:17.217 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-27 16:51:17.217 +05:30 [DBG] Start parsing for secret in post body
+2019-05-27 16:51:17.218 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-27 16:51:17.218 +05:30 [DBG] Secret id found: client
+2019-05-27 16:51:17.218 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-27 16:51:17.218 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-27 16:51:17.218 +05:30 [DBG] Client validation success
+2019-05-27 16:51:17.219 +05:30 [DBG] Start token request validation
+2019-05-27 16:51:17.219 +05:30 [DBG] Start client credentials token request validation
+2019-05-27 16:51:17.219 +05:30 [DBG] client credentials token request validation success
+2019-05-27 16:51:17.219 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-27 16:51:17.220 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-27 16:51:17.228 +05:30 [DBG] Token request success.
+2019-05-27 16:51:33.837 +05:30 [DBG] CORS request made for path: /connect/token from origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 16:51:33.838 +05:30 [DBG] Client list checked and origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop is not allowed
+2019-05-27 16:51:33.838 +05:30 [WRN] CorsPolicyService did not allow origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 16:51:33.838 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 16:51:33.839 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 16:51:33.839 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 16:51:33.839 +05:30 [DBG] Start token request.
+2019-05-27 16:51:33.839 +05:30 [DBG] Start client validation
+2019-05-27 16:51:33.839 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-27 16:51:33.839 +05:30 [DBG] Start parsing for secret in post body
+2019-05-27 16:51:33.840 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-27 16:51:33.840 +05:30 [DBG] Secret id found: client
+2019-05-27 16:51:33.840 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-27 16:51:33.841 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-27 16:51:33.841 +05:30 [DBG] Client validation success
+2019-05-27 16:51:33.841 +05:30 [DBG] Start token request validation
+2019-05-27 16:51:33.841 +05:30 [DBG] Start client credentials token request validation
+2019-05-27 16:51:33.841 +05:30 [DBG] client credentials token request validation success
+2019-05-27 16:51:33.842 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-27 16:51:33.842 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-27 16:51:33.849 +05:30 [DBG] Token request success.
+2019-05-27 16:53:46.382 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 16:53:46.545 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 16:53:46.557 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 16:53:46.558 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 16:53:46.559 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 16:53:46.559 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 16:53:46.559 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 16:53:49.745 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 16:53:49.750 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 16:53:49.750 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 16:53:49.750 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 16:53:49.750 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 16:53:49.751 +05:30 [DBG] Error Url: /home/error
+2019-05-27 16:53:49.751 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 16:53:59.645 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 16:53:59.652 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 16:53:59.652 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 16:53:59.659 +05:30 [DBG] Start discovery request
+2019-05-27 16:54:13.446 +05:30 [DBG] CORS request made for path: /connect/token from origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 16:54:13.450 +05:30 [DBG] Client list checked and origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop is not allowed
+2019-05-27 16:54:13.450 +05:30 [WRN] CorsPolicyService did not allow origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 16:54:13.451 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 16:54:13.465 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 16:54:13.466 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 16:54:13.483 +05:30 [DBG] Start token request.
+2019-05-27 16:54:13.495 +05:30 [DBG] Start client validation
+2019-05-27 16:54:13.505 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-27 16:54:13.512 +05:30 [DBG] Start parsing for secret in post body
+2019-05-27 16:54:13.546 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-27 16:54:13.546 +05:30 [DBG] Secret id found: client
+2019-05-27 16:54:13.569 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-27 16:54:13.586 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-27 16:54:13.586 +05:30 [DBG] Client validation success
+2019-05-27 16:54:13.606 +05:30 [DBG] Start token request validation
+2019-05-27 16:54:13.620 +05:30 [DBG] Start client credentials token request validation
+2019-05-27 16:54:13.667 +05:30 [DBG] client credentials token request validation success
+2019-05-27 16:54:13.693 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-27 16:54:13.756 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-27 16:54:13.932 +05:30 [DBG] Token request success.
+2019-05-27 17:06:36.312 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-05-27 17:06:36.399 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-27 17:06:36.407 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-27 17:06:36.407 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-27 17:06:36.407 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-27 17:06:36.408 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-27 17:06:36.408 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-27 17:06:40.042 +05:30 [DBG] Login Url: /Account/Login
+2019-05-27 17:06:40.049 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-27 17:06:40.049 +05:30 [DBG] Logout Url: /Account/Logout
+2019-05-27 17:06:40.049 +05:30 [DBG] ConsentUrl Url: /consent
+2019-05-27 17:06:40.049 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-27 17:06:40.050 +05:30 [DBG] Error Url: /home/error
+2019-05-27 17:06:40.050 +05:30 [DBG] Error Id Parameter: errorId
+2019-05-27 17:07:08.212 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-27 17:07:08.222 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-27 17:07:08.223 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-27 17:07:08.231 +05:30 [DBG] Start discovery request
+2019-05-27 17:07:38.721 +05:30 [DBG] CORS request made for path: /connect/token from origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 17:07:38.750 +05:30 [DBG] Client list checked and origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop is not allowed
+2019-05-27 17:07:38.752 +05:30 [WRN] CorsPolicyService did not allow origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2019-05-27 17:07:38.754 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-27 17:07:38.845 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-27 17:07:38.846 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-27 17:07:39.037 +05:30 [DBG] Start token request.
+2019-05-27 17:07:39.158 +05:30 [DBG] Start client validation
+2019-05-27 17:07:39.256 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-05-27 17:07:39.334 +05:30 [DBG] Start parsing for secret in post body
+2019-05-27 17:07:39.690 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-05-27 17:07:39.691 +05:30 [DBG] Secret id found: client
+2019-05-27 17:07:39.974 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-05-27 17:07:40.189 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-27 17:07:40.194 +05:30 [DBG] Client validation success
+2019-05-27 17:07:40.350 +05:30 [DBG] Start token request validation
+2019-05-27 17:07:40.439 +05:30 [DBG] Start client credentials token request validation
+2019-05-27 17:07:40.742 +05:30 [DBG] client credentials token request validation success
+2019-05-27 17:07:40.971 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"client","client_secret":"***REDACTED***","scope":"Ledger-API","grant_type":"client_credentials"},"$type":"TokenRequestValidationLog"}
+2019-05-27 17:07:41.357 +05:30 [DBG] Getting claims for access token for client: client
+2019-05-27 17:07:42.250 +05:30 [DBG] Token request success.

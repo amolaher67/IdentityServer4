@@ -1,0 +1,11 @@
+E:\BuildingLink\Ledger-Auth\ClientApp\bin\Local\netcoreapp2.2\ClientApp.deps.json
+E:\BuildingLink\Ledger-Auth\ClientApp\bin\Local\netcoreapp2.2\ClientApp.runtimeconfig.json
+E:\BuildingLink\Ledger-Auth\ClientApp\bin\Local\netcoreapp2.2\ClientApp.runtimeconfig.dev.json
+E:\BuildingLink\Ledger-Auth\ClientApp\bin\Local\netcoreapp2.2\ClientApp.dll
+E:\BuildingLink\Ledger-Auth\ClientApp\bin\Local\netcoreapp2.2\ClientApp.pdb
+E:\BuildingLink\Ledger-Auth\ClientApp\obj\Local\netcoreapp2.2\ClientApp.csprojAssemblyReference.cache
+E:\BuildingLink\Ledger-Auth\ClientApp\obj\Local\netcoreapp2.2\ClientApp.csproj.CoreCompileInputs.cache
+E:\BuildingLink\Ledger-Auth\ClientApp\obj\Local\netcoreapp2.2\ClientApp.AssemblyInfoInputs.cache
+E:\BuildingLink\Ledger-Auth\ClientApp\obj\Local\netcoreapp2.2\ClientApp.AssemblyInfo.cs
+E:\BuildingLink\Ledger-Auth\ClientApp\obj\Local\netcoreapp2.2\ClientApp.dll
+E:\BuildingLink\Ledger-Auth\ClientApp\obj\Local\netcoreapp2.2\ClientApp.pdb

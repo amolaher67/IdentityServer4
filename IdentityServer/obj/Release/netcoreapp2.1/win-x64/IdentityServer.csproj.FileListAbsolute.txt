@@ -1,0 +1,15 @@
+E:\BuildingLink\Ledger-Auth\IdentityServer\bin\Release\netcoreapp2.1\win-x64\IdentityServer.exe
+E:\BuildingLink\Ledger-Auth\IdentityServer\bin\Release\netcoreapp2.1\win-x64\IdentityServer.deps.json
+E:\BuildingLink\Ledger-Auth\IdentityServer\bin\Release\netcoreapp2.1\win-x64\IdentityServer.runtimeconfig.json
+E:\BuildingLink\Ledger-Auth\IdentityServer\bin\Release\netcoreapp2.1\win-x64\IdentityServer.runtimeconfig.dev.json
+E:\BuildingLink\Ledger-Auth\IdentityServer\bin\Release\netcoreapp2.1\win-x64\IdentityServer.dll
+E:\BuildingLink\Ledger-Auth\IdentityServer\bin\Release\netcoreapp2.1\win-x64\IdentityServer.pdb
+E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Release\netcoreapp2.1\win-x64\IdentityServer.csprojAssemblyReference.cache
+E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Release\netcoreapp2.1\win-x64\IdentityServer.csproj.CoreCompileInputs.cache
+E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Release\netcoreapp2.1\win-x64\IdentityServer.RazorAssemblyInfo.cache
+E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Release\netcoreapp2.1\win-x64\IdentityServer.RazorAssemblyInfo.cs
+E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Release\netcoreapp2.1\win-x64\IdentityServer.AssemblyInfoInputs.cache
+E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Release\netcoreapp2.1\win-x64\IdentityServer.AssemblyInfo.cs
+E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Release\netcoreapp2.1\win-x64\IdentityServer.RazorTargetAssemblyInfo.cache
+E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Release\netcoreapp2.1\win-x64\IdentityServer.dll
+E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Release\netcoreapp2.1\win-x64\IdentityServer.pdb

@@ -1,0 +1,14 @@
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\bin\Local\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\bin\Local\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\bin\Local\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\bin\Local\netcoreapp2.2\IdentityServer-Test.deps.json
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\bin\Local\netcoreapp2.2\IdentityServer-Test.runtimeconfig.json
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\bin\Local\netcoreapp2.2\IdentityServer-Test.runtimeconfig.dev.json
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\bin\Local\netcoreapp2.2\IdentityServer-Test.dll
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\bin\Local\netcoreapp2.2\IdentityServer-Test.pdb
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\obj\Local\netcoreapp2.2\IdentityServer-Test.csprojAssemblyReference.cache
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\obj\Local\netcoreapp2.2\IdentityServer-Test.csproj.CoreCompileInputs.cache
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\obj\Local\netcoreapp2.2\IdentityServer-Test.AssemblyInfoInputs.cache
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\obj\Local\netcoreapp2.2\IdentityServer-Test.AssemblyInfo.cs
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\obj\Local\netcoreapp2.2\IdentityServer-Test.dll
+E:\BuildingLink\Ledger-Auth\IdentityServer-Test\obj\Local\netcoreapp2.2\IdentityServer-Test.pdb

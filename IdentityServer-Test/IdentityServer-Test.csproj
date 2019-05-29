@@ -5,6 +5,8 @@
     <RootNamespace>IdentityServer_Test</RootNamespace>
 
     <IsPackable>false</IsPackable>
+
+    <Configurations>Debug;Release;Local</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
