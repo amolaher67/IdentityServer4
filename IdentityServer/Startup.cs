@@ -60,10 +60,7 @@ namespace IdentityServer
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            //var options = new RewriteOptions().AddRedirect("gettoken", "connect/token",302);
-            //app.UseRewriter(options);
-
+            
             // uncomment if you want to support static files
             //app.UseStaticFiles();
 

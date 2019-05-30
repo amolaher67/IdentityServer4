@@ -80,7 +80,7 @@ namespace IdentityServer
                     {
                         ClientId = item.ClientId,
                         AllowedCorsOrigins = new List<string>() { "*" },
-                        AllowedGrantTypes = GrantTypes.ClientCredentials, //GetGrantType(clientOptions.FirstOrDefault(s => s.ClientId == "client")?.AllowedGrantTypes), //its hardCode as of now--- TODO to make it dynamic
+                        AllowedGrantTypes =GetGrantType(clientOptions.FirstOrDefault(s => s.ClientId == "client")?.AllowedGrantTypes), //its hardCode as of now--- TODO to make it dynamic
                         ClientSecrets =
                     {
                         new Secret(!string.IsNullOrEmpty(item.ClientSecret)
@@ -198,7 +198,7 @@ namespace IdentityServer
 
                 foreach (var grantType in grantTypes)
                 {
-                    allAllowedGrantTypes.AddRange((ICollection<string>)typeof(GrantTypes).GetMethod(grantType,BindingFlags.Public|BindingFlags.Static).Invoke(null, null));
+                    allAllowedGrantTypes.AddRange((ICollection<string>)typeof(GrantTypes).GetMethod("get_"+grantType,BindingFlags.Public|BindingFlags.Static).Invoke(null, null));
                 }
 
                 return allAllowedGrantTypes;
