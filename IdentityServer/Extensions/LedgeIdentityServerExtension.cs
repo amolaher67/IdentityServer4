@@ -20,46 +20,58 @@ namespace IdentityServer.Extensions
     {
         public static void AddLedgeIdentityServerExtension(this IServiceCollection services, IConfiguration configuration, IHostingEnvironment environment)
         {
-            var resourceoptions = new List<ApiResourceOptions>();
-            configuration.GetSection("ApiResourceOptions").Bind(resourceoptions);
-            //services.Configure<ApiResourceOptions>(section);
-
-            var clientoptions = new List<ClientOptions>();
-            configuration.GetSection("ClinetOptions").Bind(clientoptions);
-
-            //This is inmemory collection as of now, it will be cross cutting and change it to Custome stor in future
-            var builder = services.AddIdentityServer()
-                .AddInMemoryIdentityResources(Config.GetIdentityResources())
-                .AddInMemoryApiResources(Config.GetApis(resourceoptions))
-                .AddInMemoryClients(Config.GetClients(clientoptions));
-            // .AddSigningCredential(Certificate.Get());
-            
-            if (environment.IsDevelopment())
+            try
             {
-                builder.AddDeveloperSigningCredential();
+                var resourceoptions = new List<ApiResourceOptions>();
+                configuration.GetSection("ApiResourceOptions").Bind(resourceoptions);
+                //services.Configure<ApiResourceOptions>(section);
+
+                var clientoptions = new List<ClientOptions>();
+                configuration.GetSection("ClinetOptions").Bind(clientoptions);
+
+                //This is inmemory collection as of now, it will be cross cutting and change it to Custome stor in future
+                var builder = services.AddIdentityServer()
+                    .AddInMemoryIdentityResources(Config.GetIdentityResources())
+                    .AddInMemoryApiResources(Config.GetApis(resourceoptions))
+                    .AddInMemoryClients(Config.GetClients(clientoptions));
+                // .AddSigningCredential(Certificate.Get());
+
+                if (environment.IsDevelopment())
+                {
+                    builder.AddDeveloperSigningCredential();
+                }
+                else
+                {
+                    builder.AddCertificateFromStore(configuration);
+                }
             }
-            else
+            catch (Exception e)
             {
-                builder.AddCertificateFromStore(configuration);
-
+                Console.WriteLine(e);
+                throw;
             }
-
         }
         private static void AddCertificateFromStore(this IIdentityServerBuilder builder, IConfiguration options)
         {
-            var subjectName = options.GetValue<string>("ThumbPrint");
-
-            var store = new X509Store(StoreName.My, StoreLocation.LocalMachine);
-            store.Open(OpenFlags.ReadOnly);
-            var certificates = store.Certificates.Find(X509FindType.FindByThumbprint, subjectName, false);
-            if (certificates.Count > 0)
+            try
             {
-                builder.AddSigningCredential(certificates[0]);
+                var subjectName = options.GetValue<string>("ThumbPrint");
+
+                var store = new X509Store(StoreName.My, StoreLocation.LocalMachine);
+                store.Open(OpenFlags.ReadOnly);
+                var certificates = store.Certificates.Find(X509FindType.FindByThumbprint, subjectName, false);
+                if (certificates.Count > 0)
+                {
+                    builder.AddSigningCredential(certificates[0]);
+                }
+                else
+                    Log.Error("A matching key couldn't be found in the store");
             }
-            else
-                Log.Error("A matching key couldn't be found in the store");
-
-
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
     }
 }

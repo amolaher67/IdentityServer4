@@ -1,5 +1,8 @@
-﻿using IdentityServer4.Models;
+﻿using System;
+using IdentityServer4.Models;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using IdentityServer.Exceptions;
 using IdentityServer.IdentityOptions;
 using IdentityServer4.Test;
@@ -50,102 +53,113 @@ namespace IdentityServer
         /// <returns></returns>
         public static IEnumerable<Client> GetClients(List<ClientOptions> clientOptions)
         {
-            var clientList = new List<Client>();
-
-            if (clientOptions == null || clientOptions.Count == 0)
-                throw new IdentityServerExceptions(
-                    "IdentityServer.Config.GetClients - Application configuration missing for setting key 'ClinetOptions'");
-
-            #region GrantTypes
-
-            /*
-                public const string Implicit = "implicit";
-                public const string Hybrid = "hybrid";
-                public const string AuthorizationCode = "authorization_code";
-                public const string ClientCredentials = "client_credentials";
-                public const string ResourceOwnerPassword = "password";
-                public const string DeviceFlow = "urn:ietf:params:oauth:grant-type:device_code";
-             */
-
-            #endregion
-
-            foreach (var item in clientOptions)
+            try
             {
-                clientList.Add(new Client()
-                {
-                    ClientId = item.ClientId,
-                    AllowedCorsOrigins = new List<string>() { "*" },
-                    AllowedGrantTypes = GrantTypes.ClientCredentials, //its hardCode as of now--- TODO to make it dynamic
+                var clientList = new List<Client>();
 
-                    ClientSecrets =
-                    {
-                        new Secret(!string.IsNullOrEmpty(item.ClientSecret)? item.ClientSecret.Sha256()
-                            : throw new IdentityServerExceptions("IdentityServer.Config.GetClients - Application configuration missing for setting key 'ClinetOptions.ClientSecret'"))
-                    },
-                    AllowedScopes = (item.AllowedScopes != null && item.AllowedScopes.Count > 0)
-                        ? item.AllowedScopes
-                        : throw new IdentityServerExceptions("IdentityServer.Config.GetClients - Application configuration missing for setting key 'ClinetOptions.ClientSecret'")
+                if (clientOptions == null || clientOptions.Count == 0)
+                    throw new IdentityServerExceptions(
+                        "IdentityServer.Config.GetClients - Application configuration missing for setting key 'ClinetOptions'");
 
-                });
+                #region GrantTypes
 
-                #region Commented
-                /*return new List<Client>
-               {
-                   new Client
-                   {
-                       ClientId = "client",
-
-                       // no interactive user, use the clientid/secret for authentication
-                       AllowedGrantTypes = GrantTypes.ResourceOwnerPasswordAndClientCredentials,
-                       //AccessTokenType = AccessTokenType.Jwt,
-                       //AccessTokenLifetime = 120, //86400,
-                       //IdentityTokenLifetime = 120, //86400,
-                       //UpdateAccessTokenClaimsOnRefresh = true,
-                       //SlidingRefreshTokenLifetime = 30,
-                       //AllowOfflineAccess = true,
-                       //RefreshTokenExpiration = TokenExpiration.Absolute,
-                       //RefreshTokenUsage = TokenUsage.OneTimeOnly,
-                       //AlwaysSendClientClaims = true,
-                       //Enabled = true,
-                       // secret for authentication
-                       ClientSecrets =
-                       {
-                           new Secret("secret".Sha256())
-                       },
-
-                       // scopes that client has access to
-                       AllowedScopes = { "api1" }
-                   },
-                   //new Client
-                   //{
-                   //    ClientId = "mvc",
-                   //    ClientName = "MVC Client",
-
-                   //    AllowedGrantTypes = GrantTypes.Implicit,
-
-                   //    // where to redirect to after login
-                   //    RedirectUris = { "http://localhost:5002/signin-oidc" },
-
-                   //    PostLogoutRedirectUris = { "http://localhost:5002/signout-callback-oidc" },
-
-                   //    AllowedScopes = new List<string>
-                   //    {
-                   //        IdentityServerConstants.StandardScopes.OpenId,
-                   //        IdentityServerConstants.StandardScopes.Profile
-                   //    },
-
-                   //    // secret for authentication
-                   //    ClientSecrets =
-                   //    {
-                   //        new Secret("secret".Sha256())
-                   //    }
-                   //}
-               };*/
-
+                /*
+                    public const string Implicit = "implicit";
+                    public const string Hybrid = "hybrid";
+                    public const string AuthorizationCode = "authorization_code";
+                    public const string ClientCredentials = "client_credentials";
+                    public const string ResourceOwnerPassword = "password";
+                    public const string DeviceFlow = "urn:ietf:params:oauth:grant-type:device_code";
+                 */
 
                 #endregion
+
+                foreach (var item in clientOptions)
+                {
+                    clientList.Add(new Client()
+                    {
+                        ClientId = item.ClientId,
+                        AllowedCorsOrigins = new List<string>() { "*" },
+                        AllowedGrantTypes = GrantTypes.ClientCredentials, //GetGrantType(clientOptions.FirstOrDefault(s => s.ClientId == "client")?.AllowedGrantTypes), //its hardCode as of now--- TODO to make it dynamic
+                        ClientSecrets =
+                    {
+                        new Secret(!string.IsNullOrEmpty(item.ClientSecret)
+                            ? item.ClientSecret.Sha256()
+                            : throw new IdentityServerExceptions(
+                                "IdentityServer.Config.GetClients - Application configuration missing for setting key 'ClinetOptions.ClientSecret'"))
+                    },
+                        AllowedScopes = (item.AllowedScopes != null && item.AllowedScopes.Count > 0)
+                            ? item.AllowedScopes
+                            : throw new IdentityServerExceptions(
+                                "IdentityServer.Config.GetClients - Application configuration missing for setting key 'ClinetOptions.ClientSecret'")
+                    });
+
+                    #region Commented
+
+                    /*return new List<Client>
+                   {
+                       new Client
+                       {
+                           ClientId = "client",
+
+                           // no interactive user, use the clientid/secret for authentication
+                           AllowedGrantTypes = GrantTypes.ResourceOwnerPasswordAndClientCredentials,
+                           //AccessTokenType = AccessTokenType.Jwt,
+                           //AccessTokenLifetime = 120, //86400,
+                           //IdentityTokenLifetime = 120, //86400,
+                           //UpdateAccessTokenClaimsOnRefresh = true,
+                           //SlidingRefreshTokenLifetime = 30,
+                           //AllowOfflineAccess = true,
+                           //RefreshTokenExpiration = TokenExpiration.Absolute,
+                           //RefreshTokenUsage = TokenUsage.OneTimeOnly,
+                           //AlwaysSendClientClaims = true,
+                           //Enabled = true,
+                           // secret for authentication
+                           ClientSecrets =
+                           {
+                               new Secret("secret".Sha256())
+                           },
+
+                           // scopes that client has access to
+                           AllowedScopes = { "api1" }
+                       },
+                       //new Client
+                       //{
+                       //    ClientId = "mvc",
+                       //    ClientName = "MVC Client",
+
+                       //    AllowedGrantTypes = GrantTypes.Implicit,
+
+                       //    // where to redirect to after login
+                       //    RedirectUris = { "http://localhost:5002/signin-oidc" },
+
+                       //    PostLogoutRedirectUris = { "http://localhost:5002/signout-callback-oidc" },
+
+                       //    AllowedScopes = new List<string>
+                       //    {
+                       //        IdentityServerConstants.StandardScopes.OpenId,
+                       //        IdentityServerConstants.StandardScopes.Profile
+                       //    },
+
+                       //    // secret for authentication
+                       //    ClientSecrets =
+                       //    {
+                       //        new Secret("secret".Sha256())
+                       //    }
+                       //}
+                   };*/
+
+
+                    #endregion
+                }
+
+                return clientList;
             }
-            return clientList;
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         //public static List<TestUser> GetUsers()
@@ -166,5 +180,35 @@ namespace IdentityServer
         //        }
         //    };
         //}
+
+        /// <summary>
+        /// Get GrantTypes as per Appsetting value
+        /// </summary>
+        /// <param name="grantTypes"></param>
+        /// <returns></returns>
+        private static ICollection<string> GetGrantType(IReadOnlyCollection<string> grantTypes)
+        {
+            try
+            {
+                if (grantTypes.Count == 0)
+                    throw new IdentityServerExceptions(
+                        $"Invalid Grant Type passed ,Please Check Appsetting Key:ClinetOptions.allowedGrantTypes");
+
+                var allAllowedGrantTypes = new List<string>();
+
+                foreach (var grantType in grantTypes)
+                {
+                    allAllowedGrantTypes.AddRange((ICollection<string>)typeof(GrantTypes).GetMethod(grantType,BindingFlags.Public|BindingFlags.Static).Invoke(null, null));
+                }
+
+                return allAllowedGrantTypes;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw new IdentityServerExceptions(
+                    $"Invalid Grant Type passed,Please Check Appsetting Key:ClinetOptions.allowedGrantTypes",e.StackTrace);
+            }
+        }
     }
 }
