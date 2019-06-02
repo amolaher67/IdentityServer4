@@ -11,4 +11,3 @@ E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Local\netcoreapp2.1\IdentityServe
 E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Local\netcoreapp2.1\IdentityServer.RazorTargetAssemblyInfo.cache
 E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Local\netcoreapp2.1\IdentityServer.dll
 E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Local\netcoreapp2.1\IdentityServer.pdb
-E:\BuildingLink\Ledger-Auth\IdentityServer\obj\Local\netcoreapp2.1\IdentityServer.csprojAssemblyReference.cache

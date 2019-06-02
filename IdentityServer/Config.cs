@@ -80,7 +80,7 @@ namespace IdentityServer
                     {
                         ClientId = item.ClientId,
                         AllowedCorsOrigins = new List<string>() { "*" },
-                        AllowedGrantTypes =GetGrantType(clientOptions.FirstOrDefault(s => s.ClientId == "client")?.AllowedGrantTypes), //its hardCode as of now--- TODO to make it dynamic
+                        AllowedGrantTypes = GetGrantType(clientOptions.FirstOrDefault(s => s.ClientId == "client")?.AllowedGrantTypes), //its hardCode as of now--- TODO to make it dynamic
                         ClientSecrets =
                     {
                         new Secret(!string.IsNullOrEmpty(item.ClientSecret)

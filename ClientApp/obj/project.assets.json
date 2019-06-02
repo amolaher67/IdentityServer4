@@ -812,8 +812,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://dev-credweb01.ho.fosltd.co.za/Nuget.Common/nuget": {},
-        "http://dev-credweb01.ho.fosltd.co.za/Nuget.Credit/nuget": {},
         "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {

@@ -3392,7 +3392,7 @@
       ]
     },
     "System.Dynamic.Runtime/4.0.11": {
-      "sha512": "db34f6LHYM0U0JpE+sOmjar27BnqTVkbLJhgfwMpTdgTigG/Hna3m2MYVwnFzGGKnEJk2UXFuoVTr8WUbU91/A==",
+      "sha512": "PcGo2pNxBWuACwNzqRp0BZOw6FYOPebjfZp0msyKgVyp+nhbYkhkAlNjydrbTZHa6R92IWgzWRhFVqEZer/RDg==",
       "type": "package",
       "path": "system.dynamic.runtime/4.0.11",
       "files": [
@@ -3947,7 +3947,7 @@
       ]
     },
     "System.Private.DataContractSerialization/4.1.1": {
-      "sha512": "lcqFBUaCZxPiUkA4dlSOoPZGtZsAuuElH2XHgLwGLxd7ZozWetV5yiz0qGAV2AUYOqw97MtZBjbLMN16Xz4vXA==",
+      "sha512": "BtT9ZBDz6KK0+BAydbAWVMgyPng1YNoEnMMenHeSTrhOfs4s5mAxJUBjY5Uh1BvlRjN39/SXvU8CTEvEbgiuGQ==",
       "type": "package",
       "path": "system.private.datacontractserialization/4.1.1",
       "files": [
@@ -4789,7 +4789,7 @@
       ]
     },
     "System.Runtime.Serialization.Primitives/4.1.1": {
-      "sha512": "HZ6Du5QrTG8MNJbf4e4qMO3JRAkIboGT5Fk804uZtg3Gq516S7hAqTm2UZKUHa7/6HUGdVy3AqMQKbns06G/cg==",
+      "sha512": "WwwhyoY6gXZVMngFijhDjq29HruJQLCC14fG48Fg0xlQ5YsSeGy7DDUF3HuJgI769WNw4txVotRt0qUxAbYDNg==",
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.1.1",
       "files": [
@@ -5439,7 +5439,7 @@
       ]
     },
     "System.Xml.XmlDocument/4.0.1": {
-      "sha512": "2eZu6IP+etFVBBFUFzw2w6J21DqIN5eL9Y8r8JfJWUmV28Z5P0SNU01oCisVHQgHsDhHPnmq2s1hJrJCFZWloQ==",
+      "sha512": "XB8RtBqdgXCB3jmo9JPlbhNkLB33PIkflw17qwHd0LE3QHbGnsdmX/xkYmGr3odmJB5X0r+uGIEyLVwy/0HHWg==",
       "type": "package",
       "path": "system.xml.xmldocument/4.0.1",
       "files": [
@@ -5477,7 +5477,7 @@
       ]
     },
     "System.Xml.XmlSerializer/4.0.11": {
-      "sha512": "FrazwwqfIXTfq23mfv4zH+BjqkSFNaNFBtjzu3I9NRmG8EELYyrv/fJnttCIwRMFRR/YKXF1hmsMmMEnl55HGw==",
+      "sha512": "ZjdbNDYUZVBsH3tEXZ3deKjgJkNdO97W6Yv42A7bkampX81c5j/+x7+VcDiqwgg5JJsq3X6vj7FrAS58PNiFjg==",
       "type": "package",
       "path": "system.xml.xmlserializer/4.0.11",
       "files": [
@@ -5798,8 +5798,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://dev-credweb01.ho.fosltd.co.za/Nuget.Common/nuget": {},
-        "http://dev-credweb01.ho.fosltd.co.za/Nuget.Credit/nuget": {},
         "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {

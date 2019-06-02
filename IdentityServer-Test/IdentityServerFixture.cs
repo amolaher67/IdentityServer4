@@ -56,16 +56,16 @@ namespace IdentityServer_Test
             disco.IsError.Should().Be(false);
 
             // request token
-            var tokenResponse = await client.RequestPasswordTokenAsync(new PasswordTokenRequest()
+            var tokenResponse = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest()
             {
                 Address = disco.TokenEndpoint,
                 ClientId = "client",
                 ClientSecret = "secret", //key for authentication
-                UserName = "alice",
-                Password = "password",
-                Scope = "InvalidScope"  // this should be correct
+                Scope = "Ledger-API1"
             });
-            tokenResponse.IsError.Should().Be(false);
+
+            tokenResponse.IsError.Should().Be(true);
+            
         }
 
         [Fact]
@@ -78,16 +78,15 @@ namespace IdentityServer_Test
             disco.IsError.Should().Be(false);
 
             // request token
-            var tokenResponse = await client.RequestPasswordTokenAsync(new PasswordTokenRequest()
+            var tokenResponse = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest()
             {
                 Address = disco.TokenEndpoint,
-                ClientId = "client", // this should be correct
-                ClientSecret = "secret",  // this should be correct
-                UserName = "alice",
-                Password = "password",
-                Scope = "Ledger-API" 
+                ClientId = "client1",
+                ClientSecret = "secret", //key for authentication
+                Scope = "Ledger-API1"
             });
-            tokenResponse.IsError.Should().Be(false);
+
+            tokenResponse.IsError.Should().Be(true);
         }
     }
 }
