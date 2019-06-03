@@ -1,0 +1,527 @@
+2019-06-03 12:45:38.978 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 12:45:39.061 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 12:45:39.064 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 12:45:39.065 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 12:45:39.065 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 12:45:39.066 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 12:45:39.066 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 12:45:50.742 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 12:45:50.744 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 12:45:50.744 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 12:45:50.744 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 12:45:50.745 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 12:45:50.745 +05:30 [DBG] Error Url: /home/error
+2019-06-03 12:45:50.745 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 12:56:10.182 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 12:56:10.219 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 12:56:10.223 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 12:56:10.223 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 12:56:10.224 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 12:56:10.224 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 12:56:10.224 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 12:56:12.179 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 12:56:12.181 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 12:56:12.182 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 12:56:12.182 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 12:56:12.182 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 12:56:12.182 +05:30 [DBG] Error Url: /home/error
+2019-06-03 12:56:12.183 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 12:56:12.209 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 12:56:12.274 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 12:56:12.275 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 12:56:12.278 +05:30 [DBG] Start discovery request
+2019-06-03 12:59:45.876 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 12:59:45.911 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 12:59:45.914 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 12:59:45.914 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 12:59:45.914 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 12:59:45.914 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 12:59:45.914 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 13:11:22.308 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 13:11:22.345 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 13:11:22.348 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 13:11:22.348 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 13:11:22.348 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 13:11:22.348 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 13:11:22.349 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 13:11:55.189 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 13:11:55.235 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 13:11:55.238 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 13:11:55.239 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 13:11:55.239 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 13:11:55.239 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 13:11:55.239 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 13:12:19.674 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 13:12:19.711 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 13:12:19.714 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 13:12:19.714 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 13:12:19.714 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 13:12:19.714 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 13:12:19.715 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 13:19:08.374 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 13:19:08.415 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 13:19:08.418 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 13:19:08.418 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 13:19:08.418 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 13:19:08.418 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 13:19:08.419 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 13:26:10.888 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 13:26:10.922 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 13:26:10.925 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 13:26:10.925 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 13:26:10.925 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 13:26:10.926 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 13:26:10.926 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 13:26:11.648 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 13:26:11.651 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 13:26:11.651 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 13:26:11.651 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 13:26:11.652 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 13:26:11.652 +05:30 [DBG] Error Url: /home/error
+2019-06-03 13:26:11.652 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 13:26:11.677 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 13:26:11.680 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 13:26:11.680 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 13:26:11.684 +05:30 [DBG] Start discovery request
+2019-06-03 13:28:10.854 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 13:28:10.887 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 13:28:10.890 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 13:28:10.891 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 13:28:10.891 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 13:28:10.891 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 13:28:10.891 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 13:28:11.259 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 13:28:11.262 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 13:28:11.262 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 13:28:11.262 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 13:28:11.262 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 13:28:11.262 +05:30 [DBG] Error Url: /home/error
+2019-06-03 13:28:11.263 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 13:28:11.287 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 13:28:11.290 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 13:28:11.291 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 13:28:11.294 +05:30 [DBG] Start discovery request
+2019-06-03 13:31:38.751 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 13:31:38.789 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 13:31:38.792 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 13:31:38.792 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 13:31:38.792 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 13:31:38.793 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 13:31:38.793 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 13:31:38.873 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 13:31:38.875 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 13:31:38.876 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 13:31:38.876 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 13:31:38.876 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 13:31:38.876 +05:30 [DBG] Error Url: /home/error
+2019-06-03 13:31:38.876 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 13:31:38.902 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 13:31:38.904 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 13:31:38.905 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 13:31:38.908 +05:30 [DBG] Start discovery request
+2019-06-03 13:53:53.376 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 13:53:53.413 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 13:53:53.416 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 13:53:53.416 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 13:53:53.417 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 13:53:53.417 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 13:53:53.417 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 13:53:53.493 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 13:53:53.496 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 13:53:53.496 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 13:53:53.496 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 13:53:53.496 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 13:53:53.497 +05:30 [DBG] Error Url: /home/error
+2019-06-03 13:53:53.497 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 13:53:53.524 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 13:53:53.527 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 13:53:53.527 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 13:53:53.530 +05:30 [DBG] Start discovery request
+2019-06-03 13:56:58.233 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 13:56:58.267 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 13:56:58.270 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 13:56:58.270 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 13:56:58.270 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 13:56:58.271 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 13:56:58.271 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 13:56:58.952 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 13:56:58.954 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 13:56:58.955 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 13:56:58.955 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 13:56:58.955 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 13:56:58.955 +05:30 [DBG] Error Url: /home/error
+2019-06-03 13:56:58.955 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 13:56:58.980 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 13:56:58.983 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 13:56:58.983 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 13:56:58.987 +05:30 [DBG] Start discovery request
+2019-06-03 14:00:41.577 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 14:00:41.611 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 14:00:41.614 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 14:00:41.614 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 14:00:41.614 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 14:00:41.614 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 14:00:41.614 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 14:00:43.619 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 14:00:43.621 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 14:00:43.621 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 14:00:43.622 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 14:00:43.622 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 14:00:43.622 +05:30 [DBG] Error Url: /home/error
+2019-06-03 14:00:43.622 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 14:00:43.649 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 14:00:43.651 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 14:00:43.652 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 14:00:43.655 +05:30 [DBG] Start discovery request
+2019-06-03 14:04:04.868 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 14:04:04.904 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 14:04:04.907 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 14:04:04.907 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 14:04:04.907 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 14:04:04.908 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 14:04:04.908 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 14:04:05.635 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 14:04:05.638 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 14:04:05.638 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 14:04:05.638 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 14:04:05.638 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 14:04:05.638 +05:30 [DBG] Error Url: /home/error
+2019-06-03 14:04:05.638 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 14:04:05.663 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 14:04:05.666 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 14:04:05.667 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 14:04:05.670 +05:30 [DBG] Start discovery request
+2019-06-03 14:05:07.887 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 14:05:07.920 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 14:05:07.922 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 14:05:07.923 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 14:05:07.923 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 14:05:07.923 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 14:05:07.923 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 14:05:07.995 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 14:05:07.997 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 14:05:07.997 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 14:05:07.997 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 14:05:07.997 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 14:05:07.997 +05:30 [DBG] Error Url: /home/error
+2019-06-03 14:05:07.997 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 14:05:08.019 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 14:05:08.022 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 14:05:08.022 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 14:05:08.025 +05:30 [DBG] Start discovery request
+2019-06-03 14:06:44.198 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 14:06:44.231 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 14:06:44.234 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 14:06:44.234 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 14:06:44.235 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 14:06:44.235 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 14:06:44.235 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 14:06:44.498 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 14:06:44.501 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 14:06:44.501 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 14:06:44.502 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 14:06:44.502 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 14:06:44.502 +05:30 [DBG] Error Url: /home/error
+2019-06-03 14:06:44.502 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 14:06:44.529 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 14:06:44.532 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 14:06:44.532 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 14:06:44.536 +05:30 [DBG] Start discovery request
+2019-06-03 14:08:00.607 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 14:08:00.642 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 14:08:00.645 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 14:08:00.645 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 14:08:00.646 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 14:08:00.646 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 14:08:00.646 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 14:08:01.280 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 14:08:01.283 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 14:08:01.284 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 14:08:01.284 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 14:08:01.284 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 14:08:01.284 +05:30 [DBG] Error Url: /home/error
+2019-06-03 14:08:01.284 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 14:08:01.311 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 14:08:01.314 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 14:08:01.314 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 14:08:01.318 +05:30 [DBG] Start discovery request
+2019-06-03 14:08:04.456 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-06-03 14:08:04.492 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-06-03 14:08:04.492 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-06-03 14:08:04.567 +05:30 [DBG] Start token request.
+2019-06-03 14:08:04.578 +05:30 [DBG] Start client validation
+2019-06-03 14:08:04.585 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-06-03 14:08:04.590 +05:30 [DBG] Start parsing for secret in post body
+2019-06-03 14:08:04.629 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-06-03 14:08:04.629 +05:30 [DBG] Secret id found: client
+2019-06-03 14:08:04.641 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-06-03 14:08:04.661 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-06-03 14:08:04.662 +05:30 [DBG] Client validation success
+2019-06-03 14:08:04.678 +05:30 [DBG] Start token request validation
+2019-06-03 14:08:04.685 +05:30 [DBG] Start client credentials token request validation
+2019-06-03 14:08:04.708 +05:30 [DBG] client credentials token request validation success
+2019-06-03 14:08:04.720 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","scope":"Ledger-API","client_id":"client","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-06-03 14:08:05.020 +05:30 [FTL] Unhandled exception: Method not found: 'System.String IdentityModel.CryptoRandom.CreateUniqueId(Int32)'.
+System.MissingMethodException: Method not found: 'System.String IdentityModel.CryptoRandom.CreateUniqueId(Int32)'.
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 399
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+2019-06-03 14:08:05.108 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.MissingMethodException: Method not found: 'System.String IdentityModel.CryptoRandom.CreateUniqueId(Int32)'.
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 399
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 69
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-03 14:11:09.253 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 14:11:09.288 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 14:11:09.291 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 14:11:09.291 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 14:11:09.291 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 14:11:09.292 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 14:11:09.292 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 14:11:10.050 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 14:11:10.052 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 14:11:10.052 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 14:11:10.053 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 14:11:10.053 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 14:11:10.053 +05:30 [DBG] Error Url: /home/error
+2019-06-03 14:11:10.053 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 14:11:10.077 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 14:11:10.080 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 14:11:10.080 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 14:11:10.084 +05:30 [DBG] Start discovery request
+2019-06-03 14:11:23.396 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-06-03 14:11:23.491 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-06-03 14:11:23.492 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-06-03 14:11:23.499 +05:30 [DBG] Start token request.
+2019-06-03 14:11:23.504 +05:30 [DBG] Start client validation
+2019-06-03 14:11:23.509 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-06-03 14:11:23.512 +05:30 [DBG] Start parsing for secret in post body
+2019-06-03 14:11:23.517 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-06-03 14:11:23.517 +05:30 [DBG] Secret id found: client
+2019-06-03 14:11:23.529 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-06-03 14:11:23.537 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-06-03 14:11:23.537 +05:30 [DBG] Client validation success
+2019-06-03 14:11:23.545 +05:30 [DBG] Start token request validation
+2019-06-03 14:11:23.552 +05:30 [DBG] Start client credentials token request validation
+2019-06-03 14:11:23.574 +05:30 [DBG] client credentials token request validation success
+2019-06-03 14:11:23.586 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","scope":"Ledger-API","client_id":"client","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-06-03 14:11:23.795 +05:30 [FTL] Unhandled exception: Method not found: 'System.String IdentityModel.CryptoRandom.CreateUniqueId(Int32)'.
+System.MissingMethodException: Method not found: 'System.String IdentityModel.CryptoRandom.CreateUniqueId(Int32)'.
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 399
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+2019-06-03 14:11:23.887 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.MissingMethodException: Method not found: 'System.String IdentityModel.CryptoRandom.CreateUniqueId(Int32)'.
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 399
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 69
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-03 14:27:09.316 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 14:27:09.352 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 14:27:09.356 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 14:27:09.356 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 14:27:09.356 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 14:27:09.356 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 14:27:09.357 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 14:27:10.581 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 14:27:10.584 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 14:27:10.585 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 14:27:10.585 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 14:27:10.585 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 14:27:10.585 +05:30 [DBG] Error Url: /home/error
+2019-06-03 14:27:10.585 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 14:27:10.610 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 14:27:10.613 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 14:27:10.614 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 14:27:10.617 +05:30 [DBG] Start discovery request
+2019-06-03 14:28:20.370 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 14:28:20.408 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 14:28:20.411 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 14:28:20.411 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 14:28:20.412 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 14:28:20.412 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 14:28:20.412 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 14:28:21.854 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 14:28:21.858 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 14:28:21.858 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 14:28:21.858 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 14:28:21.858 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 14:28:21.859 +05:30 [DBG] Error Url: /home/error
+2019-06-03 14:28:21.859 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 14:28:21.886 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 14:28:21.888 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 14:28:21.889 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 14:28:21.892 +05:30 [DBG] Start discovery request
+2019-06-03 14:29:24.799 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 14:29:24.833 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 14:29:24.835 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 14:29:24.836 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 14:29:24.836 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 14:29:24.836 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 14:29:24.836 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 14:29:25.698 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 14:29:25.700 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 14:29:25.701 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 14:29:25.701 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 14:29:25.701 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 14:29:25.701 +05:30 [DBG] Error Url: /home/error
+2019-06-03 14:29:25.701 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 14:29:25.728 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 14:29:25.731 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 14:29:25.732 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 14:29:25.735 +05:30 [DBG] Start discovery request
+2019-06-03 14:30:21.018 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 14:30:21.061 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 14:30:21.064 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 14:30:21.064 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 14:30:21.064 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 14:30:21.065 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 14:30:21.065 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 14:30:24.018 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 14:30:24.021 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 14:30:24.021 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 14:30:24.021 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 14:30:24.021 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 14:30:24.021 +05:30 [DBG] Error Url: /home/error
+2019-06-03 14:30:24.022 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 14:30:24.047 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 14:30:24.050 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 14:30:24.050 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 14:30:24.054 +05:30 [DBG] Start discovery request
+2019-06-03 14:30:29.949 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-06-03 14:30:29.960 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-06-03 14:30:29.960 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-06-03 14:30:29.967 +05:30 [DBG] Start token request.
+2019-06-03 14:30:29.972 +05:30 [DBG] Start client validation
+2019-06-03 14:30:29.977 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-06-03 14:30:29.981 +05:30 [DBG] Start parsing for secret in post body
+2019-06-03 14:30:29.986 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-06-03 14:30:29.987 +05:30 [DBG] Secret id found: client
+2019-06-03 14:30:29.998 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-06-03 14:30:30.007 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-06-03 14:30:30.007 +05:30 [DBG] Client validation success
+2019-06-03 14:30:30.015 +05:30 [DBG] Start token request validation
+2019-06-03 14:30:30.022 +05:30 [DBG] Start client credentials token request validation
+2019-06-03 14:30:30.045 +05:30 [DBG] client credentials token request validation success
+2019-06-03 14:30:30.057 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","scope":"Ledger-API","client_id":"client","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-06-03 14:30:30.275 +05:30 [FTL] Unhandled exception: Method not found: 'System.String IdentityModel.CryptoRandom.CreateUniqueId(Int32)'.
+System.MissingMethodException: Method not found: 'System.String IdentityModel.CryptoRandom.CreateUniqueId(Int32)'.
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 399
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+2019-06-03 14:30:30.371 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.MissingMethodException: Method not found: 'System.String IdentityModel.CryptoRandom.CreateUniqueId(Int32)'.
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 399
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 69
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-03 14:32:25.821 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2019-06-03 14:32:25.859 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-06-03 14:32:25.862 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-06-03 14:32:25.862 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-06-03 14:32:25.862 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-06-03 14:32:25.863 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-06-03 14:32:25.863 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-06-03 14:32:27.611 +05:30 [DBG] Login Url: /Account/Login
+2019-06-03 14:32:27.614 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2019-06-03 14:32:27.614 +05:30 [DBG] Logout Url: /Account/Logout
+2019-06-03 14:32:27.614 +05:30 [DBG] ConsentUrl Url: /consent
+2019-06-03 14:32:27.615 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2019-06-03 14:32:27.615 +05:30 [DBG] Error Url: /home/error
+2019-06-03 14:32:27.615 +05:30 [DBG] Error Id Parameter: errorId
+2019-06-03 14:32:27.642 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-03 14:32:27.645 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-03 14:32:27.645 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-03 14:32:27.649 +05:30 [DBG] Start discovery request
+2019-06-03 14:32:31.065 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2019-06-03 14:32:31.084 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-06-03 14:32:31.085 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-06-03 14:32:31.093 +05:30 [DBG] Start token request.
+2019-06-03 14:32:31.098 +05:30 [DBG] Start client validation
+2019-06-03 14:32:31.103 +05:30 [DBG] Start parsing Basic Authentication secret
+2019-06-03 14:32:31.107 +05:30 [DBG] Start parsing for secret in post body
+2019-06-03 14:32:31.112 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2019-06-03 14:32:31.113 +05:30 [DBG] Secret id found: client
+2019-06-03 14:32:31.125 +05:30 [DBG] client configuration validation for client client succeeded.
+2019-06-03 14:32:31.134 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-06-03 14:32:31.134 +05:30 [DBG] Client validation success
+2019-06-03 14:32:31.143 +05:30 [DBG] Start token request validation
+2019-06-03 14:32:31.150 +05:30 [DBG] Start client credentials token request validation
+2019-06-03 14:32:31.174 +05:30 [DBG] client credentials token request validation success
+2019-06-03 14:32:31.187 +05:30 [INF] Token request validation success
+{"ClientId":"client","ClientName":null,"GrantType":"client_credentials","Scopes":"Ledger-API","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","scope":"Ledger-API","client_id":"client","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-06-03 14:32:31.414 +05:30 [FTL] Unhandled exception: Method not found: 'System.String IdentityModel.CryptoRandom.CreateUniqueId(Int32)'.
+System.MissingMethodException: Method not found: 'System.String IdentityModel.CryptoRandom.CreateUniqueId(Int32)'.
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 399
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+2019-06-03 14:32:31.512 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.MissingMethodException: Method not found: 'System.String IdentityModel.CryptoRandom.CreateUniqueId(Int32)'.
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at IdentityServer4.Services.DefaultTokenService.CreateAccessTokenAsync(TokenCreationRequest request)
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.CreateAccessTokenAsync(ValidatedTokenRequest request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 399
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessTokenRequestAsync(TokenRequestValidationResult validationResult) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 313
+   at IdentityServer4.ResponseHandling.TokenResponseGenerator.ProcessAsync(TokenRequestValidationResult request) in C:\local\identity\server4\IdentityServer4\src\ResponseHandling\Default\TokenResponseGenerator.cs:line 84
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessTokenRequestAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 98
+   at IdentityServer4.Endpoints.TokenEndpoint.ProcessAsync(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Endpoints\TokenEndpoint.cs:line 70
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 54
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 69
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
